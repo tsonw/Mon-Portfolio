@@ -1,4 +1,4 @@
-.button {
+.button-langue {
     width: 100%;
     position: relative;
 }
@@ -81,7 +81,8 @@
     transform: translate(5px);
     padding: 10px 10px;
     text-decoration: none;
-    justify-items: center;
+    font-weight: 700;
+    text-decoration: underline;
     transition: all 0.2s ease-in-out;
 }
 

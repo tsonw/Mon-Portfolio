@@ -6,8 +6,7 @@ export default function Home() {
 
     return (
         <>
-            <NavBar />
-            <div className="home">
+            <div className="home" id="Home">
                 <div className="text">
                     <p>Bonjour à tous !</p>
                     <h1>Ingénieur<br/>En Cybersécurité</h1>
@@ -19,6 +18,10 @@ export default function Home() {
                     <div className="gif-2"></div>
                     <div className="gif-3"></div>
                     <div className="gif-4"></div>
+                </div>
+                <div className="button-function">
+                    <a href="#" className="En-savoir-plus">En savoir plus</a>
+                    <a href="#" className="Contactez-moi">Contactez-moi</a>
                 </div>
             </div>
         </>

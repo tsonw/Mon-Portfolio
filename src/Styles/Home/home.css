@@ -207,3 +207,65 @@ body {
         scale: 1;
     }
 }
+
+.button-function {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    width: 40%;
+    height: 12%;
+    bottom: 5%;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.button-function > .En-savoir-plus {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    border: #000000 solid 1px;
+    border-radius: 50px;
+    width: calc(50% - 3px);
+    height: calc(100% - 3px);
+    box-shadow: 3px 3px 0px #000000;
+    text-align: center;
+    align-content: center;
+    background-color: #DEF246;
+    transition: all 0.2s ease-out;
+}
+
+.button-function > .En-savoir-plus:hover {
+    background-color: #e1ff00;
+    transition: all 0.2s ease-out;
+}
+
+.button-function > .En-savoir-plus:active {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    border: #000000 solid 1px;
+    border-radius: 50px;
+    width: calc(50% - 3px);
+    height: calc(100% - 3px);
+    box-shadow: 3px 3px 0px #000000;
+    text-align: center;
+    align-content: center;
+    background-color: #b9cd29;
+}
+
+.button-function > .Contactez-moi {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    border: #000000 solid 1px;
+    border-radius: 50px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    background-color: #ffffff;
+}

@@ -33,7 +33,7 @@ export default function BtnLangue() {
     return (
         <>
             <div>
-                <div className="button">
+                <div className="button-langue">
                     <button onClick={toggleLangue} className="btn-langue" id="btn-langue">
                         Langue 
                     </button>

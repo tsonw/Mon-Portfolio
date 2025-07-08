@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import viteLogo from '/vite.svg'
 import Home from './Pages/Home'
 import Francais from './Pages/Francais'
 

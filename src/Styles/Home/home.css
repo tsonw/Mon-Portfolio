@@ -142,7 +142,6 @@ body {
     width: 15%;
     height: 15%;
     opacity: 0;
-    background-image: url('src/assets/retina.gif');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -156,7 +155,6 @@ body {
     width: 15%;
     height: 15%;
     opacity: 0;
-    background-image: url('src/assets/encryption.gif');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -170,7 +168,6 @@ body {
     width: 15%;
     height: 15%;
     opacity: 0;
-    background-image: url('src/assets/fingerprint-scan.gif');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -184,7 +181,6 @@ body {
     width: 15%;
     height: 15%;
     opacity: 0;
-    background-image: url('src/assets/cybersecurity.gif');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -221,6 +217,23 @@ body {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     padding: 10px;
+    opacity: 0;
+    animation: animation-button-function 0.5s 0.3s ease-in-out forwards;
+}
+
+@keyframes animation-button-function {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    70% {
+        opacity: 1;
+        scale: 1.2;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .button-function > .En-savoir-plus {

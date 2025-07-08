@@ -7,10 +7,10 @@ export default function NavBar() {
     return (
         <>
             <nav className="navbar">
-                <Link className="logo_link" to="/"><img className="logo"  src="../public/LogoTS.png" alt="Logo" /></Link>
+                <Link className="logo_link" to="/"><img className="logo"  src="/Mon-Portfolio/LogoTS.png" alt="Logo" /></Link>
                 <ul className="navbar_links">
-                    <li><a href="/">À propos</a></li>
-                    <li><a href="/">Compétences</a></li>
+                    <li><a href="/Mon-Portfolio/">À propos</a></li>
+                    <li><a href="/Mon-Portfolio/">Compétences</a></li>
                     <li><a href="/">Contact</a></li>
                 </ul>
                 <BtnLangue />

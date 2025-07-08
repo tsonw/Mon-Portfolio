@@ -14,9 +14,22 @@
     top: 0;
     z-index: 1;
 }
+
+@keyframes animation-nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .logo_link {
     display: flex;
     justify-content: center;
+    animation: animation-nav 0.5s ease-in-out forwards;
 }
 
 .logo {
@@ -28,6 +41,7 @@
     display: flex;
     gap: 30px;
     list-style-type: none;
+    animation: animation-nav 0.5s ease-in-out forwards;
 }
 
 .navbar_links > li > a {

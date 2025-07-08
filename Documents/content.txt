@@ -1,0 +1,29 @@
+Portfolio React 2025
+
+Home
+
+À propos
+    Họ tên đầy đủ
+    Ảnh đại diện (chất lượng, đúng vibe bạn muốn truyền tải)
+    Một đoạn giới thiệu ngắn: bạn là ai, đang làm gì, đam mê, định hướng (ngắn mà chất)
+    Liên hệ: email, số điện thoại, link LinkedIn, CV, GitHub, Behance, v.v.
+
+Education
+    Tên trường, ngành học
+    Thời gian học
+
+Compétences
+    Chia rõ ra theo từng nhóm:
+    Hard skills: ví dụ như design tools (Photoshop, Figma), ngôn ngữ lập trình (Python, Java), viết content, v.v.
+    Soft skills: giao tiếp, teamwork, time management, critical thinking,...
+    💡 Tips: có thể thêm bar chart, icon, hay progress bar để nhìn "visual" hơn nha!
+
+Projects
+    Tên dự án
+    Thời gian thực hiện
+    Vai trò của bạn (Designer? Dev? Content creator?)
+    Mô tả ngắn về dự án
+    Kết quả (nếu có): số liệu, feedback, sản phẩm demo
+    Link dự án nếu có: web, repo, drive, v.v.
+
+Contact

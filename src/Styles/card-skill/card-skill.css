@@ -1,0 +1,58 @@
+.box-skill {
+    width: 100%;
+    background-color: #DFF349;
+    border-radius: 30px;
+    border: #000000 solid 2px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.box-skill-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-box-skill {
+    color: #000000;
+    margin: 10px 0px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.box-skill-langue-item {
+    list-style-type: none;
+    margin: 10%;
+}
+
+.skill-langue {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-skill-langue-box {
+    width: 18%;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: #ffffff solid 3px;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-skill-langue {
+    width: 70%;
+}
+
+.name-skill-langue-text {
+    color: #000000;
+    margin-left: 5%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}

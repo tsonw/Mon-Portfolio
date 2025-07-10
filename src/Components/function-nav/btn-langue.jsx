@@ -14,7 +14,8 @@ export default function BtnLangue() {
             btnLangue.style.backgroundColor = "#ffffff"
         } else {
             btnLangueContent.style.display = "block";
-            btnLangue.style.backgroundColor = "#DEF246"
+            btnLangue.style.backgroundColor = "#DEF246";
+            btnLangue.style.border = "#000000 solid 1px";
         }
     }
 
@@ -26,7 +27,8 @@ export default function BtnLangue() {
             for (var i = 0; i < dropdowns.length; i++) {
                 dropdowns[i].style.display = "none";
             }
-            btnLangue.style.backgroundColor = "#ffffff"
+            btnLangue.style.backgroundColor = "#ffffff";
+            btnLangue.style.border = "#000000 solid 0px";
         }
     }
     

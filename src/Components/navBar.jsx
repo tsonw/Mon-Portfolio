@@ -25,7 +25,14 @@ export default function NavBar() {
                                 el.scrollIntoView({ behavior: 'smooth' });
                             }
                         }}>Compétences</a></li>
-                    <li><a href="/Mon-Portfolio/">Contact</a></li>
+                    <li><a href="/Mon-Portfolio/" onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('contact');
+                            console.log('element about:', el);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}>Contact</a></li>
                 </ul>
                 <BtnLangue />
             </nav>

@@ -35,8 +35,19 @@ export default function Home() {
                             }
                         }}
                     >
-                        En savoir plus</button>
-                    <a href="#" className="Contactez-moi">Contactez-moi</a>
+                        En savoir plus
+                    </button>
+                    <button href="#" className="Contactez-moi" onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('contact');
+                            console.log('element about:', el);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        Contactez-moi
+                    </button>
                 </div>
             </div>
         </>

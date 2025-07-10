@@ -4,15 +4,19 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     width: 65%;
+    height: 6vh;
     justify-items: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: hsla(0, 0%, 100%, 0.8);
     color: white;
     font-family: 'Lexend Deca', sans-serif;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
+    border-radius: 0px 0px 150px 150px;
+    border-bottom: #ffffff solid 2px;
+    backdrop-filter: blur(4px);
 }
 
 @keyframes animation-nav {
@@ -38,11 +42,18 @@
 }
 
 .navbar_links {
-    display: flex;
-    gap: 30px;
-    list-style-type: none;
+    list-style: none;      
+    padding-left: 0;       
+    margin-left: 0;        
+    display: flex;         
+    gap: 30px;            
     animation: animation-nav 0.5s ease-in-out forwards;
 }
+
+.navbar_links li {
+    list-style: none;      
+}
+
 
 .navbar_links > li > a {
     font-size: 95%;

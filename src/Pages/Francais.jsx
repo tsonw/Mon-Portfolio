@@ -1,7 +1,8 @@
 import React from "react";
-import '../Styles/Home/Home.css';
 import NavBar from '../Components/navBar'
 import Home from "./Home";
+import About from "./About";
+import Skills from "./Skills";
 
 export default function Francais() {
 
@@ -9,6 +10,8 @@ export default function Francais() {
         <>
             <NavBar />
             <Home />
+            <About />
+            <Skills />
         </>
     );
 }

@@ -9,9 +9,23 @@ export default function NavBar() {
             <nav className="navbar">
                 <Link className="logo_link" to="/"><img className="logo"  src="/Mon-Portfolio/LogoTS.png" alt="Logo" /></Link>
                 <ul className="navbar_links">
-                    <li><a href="/Mon-Portfolio/">À propos</a></li>
-                    <li><a href="/Mon-Portfolio/">Compétences</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="/Mon-Portfolio/" onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('about');
+                            console.log('element about:', el);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}>À propos</a></li>
+                    <li><a href="/Mon-Portfolio/" onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('skills');
+                            console.log('element about:', el);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}>Compétences</a></li>
+                    <li><a href="/Mon-Portfolio/">Contact</a></li>
                 </ul>
                 <BtnLangue />
             </nav>

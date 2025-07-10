@@ -40,8 +40,8 @@ export default function BtnLangue() {
                     <div className="btn-langue-content" id="btn-langue-content">
                         <ul>
                             <li><Link to="/">français</Link></li>    
-                            <li><Link to="/">anglais</Link></li>    
-                            <li><Link to="/">vietnamien</Link></li>    
+                            <li><Link to="/english">anglais</Link></li>    
+                            <li><Link to="/vietnam">vietnamien</Link></li>    
                         </ul>
                     </div>
                 </div>

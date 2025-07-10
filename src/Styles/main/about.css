@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@200&family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.about {
+    color: #ffffff;
+    width: 65%;
+    padding: 5vh 5vw;
+}
+
+.text-about {
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.box-text {
+    
+}
+
+.titre {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+}
+
+.sous-titre {
+    margin-bottom: 2%;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+    font-size: 16px;
+}
+
+.contenu {
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10%;
+}
+
+.card-profile-box {
+    margin-top: 10%;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.button-projet {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 60px;
+    padding: 10px 10px;
+    margin-bottom: 5%;
+}
+
+.pjt-per {
+    font-family: 'Lexend Deca', sans-serif;
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    border: #000000 solid 1px;
+    background-color: #DEF246;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.pjt-per:hover {
+    background-color: #e1ff00;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pjt-per:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.pjt-rea {
+    font-family: 'Lexend Deca', sans-serif;
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    border: #000000 solid 1px;
+    background-color: #DEF246;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.pjt-rea:hover {
+    background-color: #e1ff00;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pjt-rea:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.formation {
+    border: #DEF246 solid 2px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-formation {
+    font-family: "Cabin", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 2% 0;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}

@@ -77,6 +77,10 @@
     list-style-type: none;
 }
 
+.btn-langue-content > ul {
+    list-style: none; 
+}
+
 .btn-langue-content > ul > li > a {
     color: #000000;
     font-size: 80%;

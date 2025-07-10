@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styles/Home/Home.css';
+import '../Styles/main/Home.css';
 import mainPNG from '../assets/main.png'
 import gif1 from '../assets/retina.gif'
 import gif2 from '../assets/encryption.gif'
@@ -24,7 +24,18 @@ export default function Home() {
                     <div className="gif-4" style={{ backgroundImage: `url(${gif4})`}}></div>
                 </div>
                 <div className="button-function">
-                    <a href="#" className="En-savoir-plus">En savoir plus</a>
+                    <button 
+                        className="En-savoir-plus"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('about');
+                            console.log('element about:', el);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        En savoir plus</button>
                     <a href="#" className="Contactez-moi">Contactez-moi</a>
                 </div>
             </div>

@@ -17,13 +17,14 @@ body {
 
 .home {
     width: 65%;
-    height: 70vh;
+    height: 80vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 3vh;
+    top: 0px;
+    padding: 9vh 3vh 3vh 3vh;
     border-radius: 0px 0px 150px 150px;
     overflow: hidden;
 }
@@ -146,7 +147,7 @@ body {
     background-size: cover;
     position: absolute;
     bottom: 60%;
-    left: -25%;
+    left: -20%;
     animation: animation-gif 0.5s 0.5s ease-in-out forwards;
 }
 
@@ -159,7 +160,7 @@ body {
     background-size: cover;
     position: absolute;
     bottom: 90%;
-    left: -5%;
+    left: -0%;
     animation: animation-gif 0.5s 0.5s ease-in-out forwards;
 }
 
@@ -172,7 +173,7 @@ body {
     background-size: cover;
     position: absolute;
     bottom: 60%;
-    right: -25%;
+    right: -20%;
     animation: animation-gif 0.5s 0.5s ease-in-out forwards;
 }
 
@@ -185,7 +186,7 @@ body {
     background-size: cover;
     position: absolute;
     bottom: 90%;
-    right: -5%;
+    right: -0%;
     animation: animation-gif 0.5s 0.5s ease-in-out forwards;
 }
 
@@ -253,21 +254,14 @@ body {
 
 .button-function > .En-savoir-plus:hover {
     background-color: #e1ff00;
-    transition: all 0.2s ease-out;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .button-function > .En-savoir-plus:active {
-    color: #000000;
-    font-weight: 600;
-    text-decoration: none;
-    border: #000000 solid 1px;
-    border-radius: 50px;
-    width: calc(50% - 3px);
-    height: calc(100% - 3px);
-    box-shadow: 3px 3px 0px #000000;
-    text-align: center;
-    align-content: center;
-    background-color: #b9cd29;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 0px #000000;
 }
 
 .button-function > .Contactez-moi {
@@ -281,4 +275,18 @@ body {
     text-align: center;
     align-content: center;
     background-color: #ffffff;
+    transition: all 0.2s ease-out;
+}
+
+.button-function > .Contactez-moi:hover {
+    border: #000000 dotted 3px;
+    background-color: #DEF246;
+    transition: all 0.2s ease-out;
+}
+
+.button-function > .Contactez-moi:active {
+    border: #000000 dotted 3px;
+    background-color: #e1ff00;
+    scale: 0.9;
+    transition: all 0.2s ease-out;
 }

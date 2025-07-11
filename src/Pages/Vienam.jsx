@@ -5,7 +5,7 @@ import About from "../Components/main/About";
 import Skills from "../Components/main/Skills";
 import Contact from "../Components/main/Contact";
 
-export default function Francais() {
+export default function Vietnam() {
 
     return (
         <>

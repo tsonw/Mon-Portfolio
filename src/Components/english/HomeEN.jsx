@@ -1,19 +1,19 @@
 import React from "react";
-import '../Styles/main/Home.css';
-import mainPNG from '../assets/main.png'
-import gif1 from '../assets/retina.gif'
-import gif2 from '../assets/encryption.gif'
-import gif3 from '../assets/fingerprint-scan.gif'
-import gif4 from '../assets/cybersecurity.gif'
+import '../../Styles/main/Home.css';
+import mainPNG from '../../assets/main.png'
+import gif1 from '../../assets/retina.gif'
+import gif2 from '../../assets/encryption.gif'
+import gif3 from '../../assets/fingerprint-scan.gif'
+import gif4 from '../../assets/cybersecurity.gif'
 
-export default function Home() {
+export default function HomeEN() {
 
     return (
         <>
             <div className="home" id="Home">
                 <div className="text">
-                    <p>Bonjour à tous !</p>
-                    <h1>Ingénieur<br/>En Cybersécurité</h1>
+                    <p>Hello everyone !</p>
+                    <h1>Engineer<br/>in Cybersecurity</h1>
                 </div>
                 <div className="image">
                     <div className="oval"></div>
@@ -35,7 +35,7 @@ export default function Home() {
                             }
                         }}
                     >
-                        En savoir plus
+                        Learn more
                     </button>
                     <button href="#" className="Contactez-moi" onClick={(e) => {
                             e.preventDefault();

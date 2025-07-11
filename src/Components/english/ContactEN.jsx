@@ -1,14 +1,14 @@
 import React from "react";
-import '../Styles/main/contact.css';
+import '../../Styles/main/contact.css';
 
-import iconPhone from '../assets/icon/telephone.gif';
-import iconMail from '../assets/icon/message.gif';
+import iconPhone from '../../assets/icon/telephone.gif';
+import iconMail from '../../assets/icon/message.gif';
 
-import iconGithub from '../assets/icon/skill/github.png';
-import iconIns from '../assets/icon/instagram.png';
-import iconThreads from '../assets/icon/threads.png';
-import iconFb from '../assets/icon/facebook.png';
-import iconlinkedin from '../assets/icon/linkedin.png';
+import iconGithub from '../../assets/icon/skill/github.png';
+import iconIns from '../../assets/icon/instagram.png';
+import iconThreads from '../../assets/icon/threads.png';
+import iconFb from '../../assets/icon/facebook.png';
+import iconlinkedin from '../../assets/icon/linkedin.png';
 
 const listInfos = [
     { 
@@ -32,7 +32,7 @@ const listSocialMedia = [
 ]
 
 
-export default function Contact() {
+export default function ContactEN() {
 
     return (
         <>

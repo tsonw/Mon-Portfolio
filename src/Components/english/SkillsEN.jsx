@@ -1,9 +1,10 @@
 import React from "react";
-import '../Styles/main/skills.css';
-import TimeLineEdu from "../Components/time-line-edu";
-import CardSkill from "../Components/card-skill";
+import '../../Styles/main/skills.css';
+import TimeLineEdu from "../time-line-edu";
+import CardSkill from "../card-skill";
+import { Link } from "react-router-dom";
 
-export default function Skills() {
+export default function SkillsEN() {
 
     return (
         <>
@@ -16,7 +17,7 @@ export default function Skills() {
                         <CardSkill />
                     </div>
                     <div className="button-projet-skills">
-                        <button className="pjt-skills">Projets personnels</button>
+                        <Link to="/english" className="pjt-skills">Projets personnels</Link>
                         <button className="pjt-skills">Projets informatiques</button>
                     </div>
                 </div>

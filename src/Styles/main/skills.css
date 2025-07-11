@@ -40,6 +40,8 @@
 
 .pjt-skills {
     background-color: #ffffff;
+    text-decoration: none;
+    color: #000;
     border-radius: 50px;
     border: #000000 solid 1px;
     width: 40%;

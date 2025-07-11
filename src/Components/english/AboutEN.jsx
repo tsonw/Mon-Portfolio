@@ -1,9 +1,9 @@
 import React from "react";
-import '../Styles/main/about.css';
-import CardProfile from "../Components/card-profile";
-import TimeLineEdu from "../Components/time-line-edu";
+import '../../Styles/main/about.css';
+import CardProfile from "../card-profile";
+import TimeLineEdu from "../time-line-edu";
 
-export default function About() {
+export default function AboutEN() {
 
     return (
         <>
@@ -19,8 +19,26 @@ export default function About() {
                     </div>
                 </div>
                 <div className="button-projet">
-                    <button className="pjt-per">Projets personnels</button>
-                    <button className="pjt-rea">Projets réalisés</button>
+                    <button className="pjt-per" onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('contact');
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        Me contactez
+                    </button>
+                    <button className="pjt-rea" onClick={(e) => {
+                            e.preventDefault();
+                            const el = document.getElementById('skills');
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        Compétences
+                    </button>
                 </div>
                 <div className="box-text">
                     <h2 className="titre-formation">Formation</h2>

@@ -19,7 +19,7 @@ export default function TimeLineEdu() {
                     }}
                     contentStyle={{
                         backgroundColor: '#ffffff',
-                        boxShadow: '5px 5px 0px #DEF246',
+                        boxShadow: '5px 5px 0px rgb(225, 255, 0)',
                         borderRadius: '20px'
                     }}
                     dateClassName="date-timeline"
@@ -36,10 +36,10 @@ export default function TimeLineEdu() {
                             src={eduIcon} 
                             alt="education icon" 
                             style={{ 
-                            width: '50%', 
-                            height: '50%', 
-                            objectFit: 'cover' 
-                            }} 
+                                width: '50%', 
+                                height: '50%', 
+                                objectFit: 'cover' 
+                            }}
                         />
                         </div>
                     }

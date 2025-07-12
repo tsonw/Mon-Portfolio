@@ -18,7 +18,7 @@ export default function Skills() {
                     </div>
                     <div className="button-projet-skills">
                         <Link to="/ProjetPersonnel" className="pjt-skills">Projets personnels</Link>
-                        <button className="pjt-skills">Projets informatiques</button>
+                        <Link to="/ProjetInformatique" className="pjt-skills">Projets informatiques</Link>
                     </div>
                 </div>
             </div>

@@ -41,7 +41,7 @@ export default function Contact() {
                     <h2 className="titre-contact">Contact</h2>
                     <div className="contact-info-box">
                         {listInfos.map((item) => (
-                            <div className="box-contact-info">
+                            <div className="box-contact-info" key={item.id}>
                                 <li key={item.id} className="info-box-content">
                                     <div className="icon-contact-info-box">
                                         <img src={item.icon} className="icon-contact-info-content" alt="Phone" />
@@ -53,7 +53,7 @@ export default function Contact() {
                     </div>
                     <div className="social-media">
                         {listSocialMedia.map((item) => (
-                            <div className="box-social-icon">
+                            <div className="box-social-icon" key={item.id}>
                                 <li key={item.id} className="icon-social">
                                     <a href={item.link} className="icon-social-link">
                                         <img src={item.icon} className="icon-social-content" alt="Phone" />
@@ -61,9 +61,6 @@ export default function Contact() {
                                 </li>
                             </div>
                         ))}
-                    </div>
-                    <div class="table">
-                        
                     </div>
                 </div>
             </div>

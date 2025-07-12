@@ -118,7 +118,7 @@ export default function CardSkill() {
     return (
         <>
             {listSkills.map((item) => ( 
-                <div>
+                <div key={item.id}>
                     <h2 className="titre-box-skill">{item.name}</h2>
                     <div className="box-skill">
                         <li key={item.id} className="box-skill-item">

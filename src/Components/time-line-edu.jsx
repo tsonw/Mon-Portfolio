@@ -52,7 +52,7 @@ export default function TimeLineEdu() {
                         width: '100%'
                     }}
                 >
-                    <h3 className="vertical-timeline-element-title">IUT d'Orsay</h3>
+                    <h3 className="vertical-timeline-element-title">IUT d'Orsay | Université Paris-Saclay</h3>
                     <h4 className="vertical-timeline-element-subtitle">France</h4>
                     <p className="description-formation">Étudiant en BUT 2 - Parcours B déploiement d'applications communicantes et sécurisées</p>
                 </VerticalTimelineElement>
@@ -96,7 +96,7 @@ export default function TimeLineEdu() {
                         width: '100%'
                     }}
                 >
-                    <h3 className="vertical-timeline-element-title">IUT d'Orsay</h3>
+                    <h3 className="vertical-timeline-element-title">IUT d'Orsay | Université Paris-Saclay</h3>
                     <h4 className="vertical-timeline-element-subtitle">France</h4>
                     <p className="description-formation">Étudiant en BUT 1 - en informatique</p>
                 </VerticalTimelineElement>

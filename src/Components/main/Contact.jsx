@@ -44,7 +44,7 @@ export default function Contact() {
                             <div className="box-contact-info" key={item.id}>
                                 <li key={item.id} className="info-box-content">
                                     <div className="icon-contact-info-box">
-                                        <img src={item.icon} className="icon-contact-info-content" alt="Phone" />
+                                        <img src={item.icon} draggable="false" className="icon-contact-info-content" alt="Phone" />
                                     </div>
                                     <h2 className="text-contact-info-content">{item.info}</h2>
                                 </li>
@@ -56,7 +56,7 @@ export default function Contact() {
                             <div className="box-social-icon" key={item.id}>
                                 <li key={item.id} className="icon-social">
                                     <a href={item.link} className="icon-social-link">
-                                        <img src={item.icon} className="icon-social-content" alt="Phone" />
+                                        <img src={item.icon} draggable="false" className="icon-social-content" alt="Phone" />
                                     </a>
                                 </li>
                             </div>

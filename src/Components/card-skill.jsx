@@ -127,7 +127,7 @@ export default function CardSkill() {
                                     <li key={i} className="box-skill-langue-item">
                                         <div className="skill-langue">
                                             <div className="icon-skill-langue-box">
-                                                <img src={langue.icon} className="icon-skill-langue" alt="Icon" />
+                                                <img src={langue.icon} draggable="false" className="icon-skill-langue" alt="Icon" />
                                             </div>
                                             <h4 className="name-skill-langue-text">{langue.nameLangue}</h4>
                                         </div>

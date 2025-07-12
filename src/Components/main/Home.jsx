@@ -17,11 +17,11 @@ export default function Home() {
                 </div>
                 <div className="image">
                     <div className="oval"></div>
-                    <img src={mainPNG} alt="Main" />
-                    <div className="gif-1" style={{ backgroundImage: `url(${gif1})`}}></div>
-                    <div className="gif-2" style={{ backgroundImage: `url(${gif2})`}}></div>
-                    <div className="gif-3" style={{ backgroundImage: `url(${gif3})`}}></div>
-                    <div className="gif-4" style={{ backgroundImage: `url(${gif4})`}}></div>
+                    <img src={mainPNG} draggable="false" alt="Main" />
+                    <div className="gif-1" draggable="false" style={{ backgroundImage: `url(${gif1})`}}></div>
+                    <div className="gif-2" draggable="false" style={{ backgroundImage: `url(${gif2})`}}></div>
+                    <div className="gif-3" draggable="false" style={{ backgroundImage: `url(${gif3})`}}></div>
+                    <div className="gif-4" draggable="false" style={{ backgroundImage: `url(${gif4})`}}></div>
                 </div>
                 <div className="button-function">
                     <button 

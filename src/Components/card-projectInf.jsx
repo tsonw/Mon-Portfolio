@@ -121,61 +121,73 @@ const listProjets = [
 
 export default function CardProjectInf() {
 
-    const divRefs = useRef([]);
+    // State chứa index ảnh hiện tại của từng project
+    const [currentImgIndexes, setCurrentImgIndexes] = useState(
+        Array(listProjets.length).fill(0) // mỗi project bắt đầu ở ảnh đầu tiên
+    );
 
-    const scrollDownByHeight = (i) => {
-        const div = divRefs.current[i];
-        if (div) {
-            div.scrollTo({
-                top: div.scrollTop + div.clientHeight,
-                behavior: 'smooth'
-            });
-        }
+    // Hàm chuyển ảnh tới
+    const nextImage = (projectIndex) => {
+        setCurrentImgIndexes((prev) => {
+            const newIndexes = [...prev];
+            const images = listProjets[projectIndex].image;
+            newIndexes[projectIndex] = (newIndexes[projectIndex] + 1) % images.length;
+            return newIndexes;
+        });
     };
 
-    const scrollUpByHeight = (i) => {
-        const div = divRefs.current[i];
-        if (div) {
-            div.scrollTo({
-                top: div.scrollTop - div.clientHeight,
-                behavior: 'smooth'
-            });
-        }
+    // Hàm chuyển ảnh lùi
+    const prevImage = (projectIndex) => {
+        setCurrentImgIndexes((prev) => {
+            const newIndexes = [...prev];
+            const images = listProjets[projectIndex].image;
+            newIndexes[projectIndex] =
+                (newIndexes[projectIndex] - 1 + images.length) % images.length;
+            return newIndexes;
+        });
     };
 
     return (
         <>
-            {listProjets.map((item, i) => ( 
-                <div className="projet-box" key={item.id}>
-                    <div className="image-box-projet">
-                        <div ref={(el) => (divRefs.current[i] = el)} className="image-box-content">    
-                            {item.image.map((image, i) => (
-                                <img key={i} src={image.icon} className="image-box-projet-content" draggable="false"/>
-                            ))}
+            {listProjets.map((item, i) => {
+                const currentImg = item.image[currentImgIndexes[i]].icon;
+                return (
+                    <div className="projet-box" key={item.id}>
+                        <div className="image-box-projet">
+                            <div className="image-box-content">    
+                                <img
+                                    src={currentImg}
+                                    className="image-box-projet-content"
+                                    draggable="false"
+                                    alt={`project-${item.id}-img`}
+                                />
+                            </div>
+                            <button className="btn-change-image-next" onClick={() => nextImage(i)}>
+                                <img src={arrow} className="img-btn-change" draggable="false" alt="next" />
+                            </button>
+                            <button className="btn-change-image-back" onClick={() => prevImage(i)}>
+                                <img src={arrow} className="img-btn-change" draggable="false" alt="back" />
+                            </button>
                         </div>
-                        <button className="btn-change-image-next" onClick={() => scrollDownByHeight(i)}>
-                            <img src={arrow} className="img-btn-change" draggable="false" alt="" />
-                        </button>
-                        <button className="btn-change-image-back" onClick={() => scrollUpByHeight(i)}>
-                            <img src={arrow} className="img-btn-change" draggable="false" alt="" />
-                        </button>
+
+                        <div className="text-box-projet">
+                            <div className="text-content-box-projet">
+                                <h3 className="date-project-content">{item.date}</h3>
+                                <h2 className="titre-project-content">{item.name}</h2>
+                                <p className="description-project-content">{item.descript}</p>
+                            </div>
+
+                            <div className="icon-langue-box-projet">
+                                {item.langue.map((langue, j) => (
+                                    <div className="icon-box-projet-content" key={j}>
+                                        <img src={langue.icon} className="icon-langue-box-projet-content" alt="Logo-Langue" draggable="false"/>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                    <div className="text-box-projet">
-                        <div className="text-content-box-projet">
-                            <h3 className="date-project-content">{item.date}</h3>
-                            <h2 className="titre-project-content">{item.name}</h2>
-                            <p className="description-project-content">{item.descript}</p>
-                        </div>
-                        <div className="icon-langue-box-projet">
-                            {item.langue.map((langue, i) => (
-                                <div className="icon-box-projet-content" key={i}>
-                                    <img src={langue.icon} className="icon-langue-box-projet-content" alt="Logo-Langue" draggable="false"/>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            ))}
+                );
+            })}
         </>
     );
 }

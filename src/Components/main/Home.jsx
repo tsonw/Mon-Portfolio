@@ -1,6 +1,7 @@
 import React from "react";
 import '../../Styles/main/Home.css';
 import mainPNG from '../../assets/main.png'
+import main from '../../assets/main.webp'
 import gif1 from '../../assets/retina.gif'
 import gif2 from '../../assets/encryption.gif'
 import gif3 from '../../assets/fingerprint-scan.gif'
@@ -13,11 +14,11 @@ export default function Home() {
             <div className="home" id="Home">
                 <div className="text">
                     <p>Bonjour à tous !</p>
-                    <h1>Ingénieur<br/>En Cybersécurité</h1>
+                    <h1>Analyste<br/>En Cybersécurité</h1>
                 </div>
                 <div className="image">
                     <div className="oval"></div>
-                    <img src={mainPNG} draggable="false" alt="Main" />
+                    <img src={main} draggable="false" alt="Main" />
                     <div className="gif-1" draggable="false" style={{ backgroundImage: `url(${gif1})`}}></div>
                     <div className="gif-2" draggable="false" style={{ backgroundImage: `url(${gif2})`}}></div>
                     <div className="gif-3" draggable="false" style={{ backgroundImage: `url(${gif3})`}}></div>

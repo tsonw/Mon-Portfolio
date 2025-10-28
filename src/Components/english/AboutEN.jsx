@@ -1,7 +1,7 @@
 import React from "react";
 import '../../Styles/main/about.css';
-import CardProfile from "../card-profile";
-import TimeLineEdu from "../time-line-edu";
+import CardProfileEN from "../card-profileEN";
+import TimeLineEduEN from "../time-line-eduEN";
 
 export default function AboutEN() {
 
@@ -10,12 +10,12 @@ export default function AboutEN() {
             <div className="about" id="about">
                 <div className="text-about">
                     <div className="box-text">
-                        <h2 className="titre">À propos</h2>
-                        <p className="sous-titre">Étudiant en 2ᵉ année de BUT Informatique à l'IUT d'Orsay</p>
-                        <p className="contenu">Je suis originaire du Vietnam et passionné par la programmation, en particulier la cybersécurité. Curieux et motivé, j’explore en permanence de nouvelles technologies afin de renforcer mes compétences techniques et mieux comprendre les systèmes informatiques.<br/><br/>Mon objectif est non seulement de progresser dans ce domaine exigeant, mais aussi d’inspirer les autres à découvrir le plaisir du code. Je suis à la recherche d’opportunités pour appliquer mes connaissances, collaborer sur des projets concrets et évoluer dans un environnement stimulant.</p>
+                        <h2 className="titre">About</h2>
+                        <p className="sous-titre">Second-year student in Computer Science at IUT d'Orsay</p>
+                        <p className="contenu">I am originally from Vietnam and passionate about programming, particularly cybersecurity. Curious and motivated, I constantly explore new technologies to strengthen my technical skills and gain a deeper understanding of computer systems.<br/><br/>My goal is not only to advance in this demanding field but also to inspire others to discover the joy of coding. I am seeking opportunities to apply my knowledge, collaborate on real projects, and grow in a stimulating environment.</p>
                     </div>
                     <div className="card-profile-box">
-                        <CardProfile />
+                        <CardProfileEN />
                     </div>
                 </div>
                 <div className="button-projet">
@@ -27,7 +27,7 @@ export default function AboutEN() {
                             }
                         }}
                     >
-                        Me contactez
+                        Contact me
                     </button>
                     <button className="pjt-rea" onClick={(e) => {
                             e.preventDefault();
@@ -37,16 +37,16 @@ export default function AboutEN() {
                             }
                         }}
                     >
-                        Compétences
+                        Skills
                     </button>
                 </div>
                 <div className="box-text">
-                    <h2 className="titre-formation">Formation</h2>
+                    <h2 className="titre-formation">Education</h2>
                 </div>
                 <div className="formation">
                     <div className="education">
                         <div className="timeline">
-                            <TimeLineEdu />
+                            <TimeLineEduEN />
                         </div>
                     </div>
                 </div>

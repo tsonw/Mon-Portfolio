@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from '../Components/navBar'
+import NavBarEN from '../Components/navBarEN'
 import HomeEN from "../Components/english/HomeEN";
 import AboutEN from "../Components/english/AboutEN";
 import SkillsEN from "../Components/english/SkillsEN";
@@ -9,7 +9,7 @@ export default function English() {
 
     return (
         <>
-            <NavBar />
+            <NavBarEN />
             <HomeEN />
             <AboutEN />
             <SkillsEN />

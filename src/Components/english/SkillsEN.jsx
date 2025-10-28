@@ -1,7 +1,7 @@
 import React from "react";
 import '../../Styles/main/skills.css';
 import TimeLineEdu from "../time-line-edu";
-import CardSkill from "../card-skill";
+import CardSkillEN from "../card-skillEN";
 import { Link } from "react-router-dom";
 
 export default function SkillsEN() {
@@ -11,14 +11,14 @@ export default function SkillsEN() {
             <div className="panel-skill" id="skills">
                 <div className="skills">
                     <div className="box-text">
-                        <h2 className="titre-skill">Compétences</h2>
+                        <h2 className="titre-skill">Skills</h2>
                     </div>
                     <div className="skills-box">
-                        <CardSkill />
+                        <CardSkillEN />
                     </div>
                     <div className="button-projet-skills">
-                        <Link to="/english" className="pjt-skills">Projets personnels</Link>
-                        <button className="pjt-skills">Projets informatiques</button>
+                        <Link to="/ProjetPersonnelEN" className="pjt-skills">Personal projects</Link>
+                        <Link to="/ProjetInformatiqueEN" className="pjt-skills">Academic projects</Link>
                     </div>
                 </div>
             </div>

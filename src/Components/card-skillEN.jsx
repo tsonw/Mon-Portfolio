@@ -29,7 +29,7 @@ import iconOffice from '../assets/icon/skill/office.png';
 const listSkills = [
     { 
         id: 1, 
-        name: "WEB Frontend", 
+        name: "Frontend Web", 
         langue: [
             { icon: iconHTML, nameLangue: "HTML"},
             { icon: iconCSS, nameLangue: "CSS"},
@@ -38,7 +38,7 @@ const listSkills = [
     },
     { 
         id: 2, 
-        name: "Programmation", 
+        name: "Programming", 
         langue: [
             { icon: iconCpp, nameLangue: "C++"},
             { icon: iconJava, nameLangue: "Java"},
@@ -49,7 +49,7 @@ const listSkills = [
     },
     { 
         id: 3, 
-        name: "Bases de données", 
+        name: "Databases", 
         langue: [
             { icon: iconOracle, nameLangue: "Oracle"},
             { icon: iconMySQL, nameLangue: "MySQL"},
@@ -58,7 +58,7 @@ const listSkills = [
     },
     { 
         id: 4, 
-        name: "Outils de conception", 
+        name: "Design Tools", 
         langue: [
             { icon: iconPTS, nameLangue: "Adobe Photoshop"},
             { icon: iconAI, nameLangue: "Adobe Illustrator"},
@@ -67,7 +67,7 @@ const listSkills = [
     },
     { 
         id: 5, 
-        name: "Systèmes d’exploitation", 
+        name: "Operating Systems", 
         langue: [
             { icon: iconWindow, nameLangue: "Window"},
             { icon: iconLinux, nameLangue: "Linux Ubuntu"},
@@ -76,7 +76,7 @@ const listSkills = [
     },
     { 
         id: 6, 
-        name: "Autres outils", 
+        name: "Other Tools", 
         langue: [
             { icon: iconGithub, nameLangue: "Github"},
             { icon: iconGit, nameLangue: "Git"},

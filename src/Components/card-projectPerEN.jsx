@@ -51,55 +51,56 @@ const listProjets = [
     { 
         id: 1,
         date: "2021 - 2023",
-        name: "Gestion de contenu pour une fanpage de tournoi de football",
-        descript: "J’ai assuré la gestion complète d’une fanpage dédiée à un tournoi de football amateur, en élaborant une stratégie de contenu cohérente et en publiant régulièrement des posts engageants. Après chaque match, je concevais des visuels dynamiques — résumés de scores, moments forts, portraits de joueurs — en utilisant des outils tels que Photoshop, Illustrator et Canva. Ces contenus visaient à renforcer l’identité visuelle du tournoi, valoriser les performances des équipes et maintenir un fort niveau d’engagement auprès de la communauté tout au long de l’événement.",
+        name: "Content Management for an Amateur Football Tournament Fanpage",
+        descript: "Managed the complete content strategy for a fanpage dedicated to an amateur football tournament. I regularly created and posted engaging content, including dynamic visuals — match summaries, highlights, and player portraits — using tools such as Photoshop, Illustrator, and Canva. These efforts aimed to strengthen the tournament's visual identity, showcase team performances, and maintain high engagement with the community throughout the event.",
         langue: [
-            { icon: iconPTS, nameLangue: "Oracle"},
-            { icon: iconAI, nameLangue: "SQLite"}
+            { icon: iconPTS, nameLangue: "Oracle" },
+            { icon: iconAI, nameLangue: "SQLite" }
         ],
         image: [
-            { icon: imgProjet11, nameLangue: "img"},
-            { icon: imgProjet12, nameLangue: "img"},
-            { icon: imgProjet13, nameLangue: "img"},
-            { icon: imgProjet14, nameLangue: "img"}
+            { icon: imgProjet11, nameLangue: "img" },
+            { icon: imgProjet12, nameLangue: "img" },
+            { icon: imgProjet13, nameLangue: "img" },
+            { icon: imgProjet14, nameLangue: "img" }
         ]
     },
     { 
         id: 2,
-        date: "juillet 2025 - août 2025",
+        date: "July 2025 - August 2025",
         name: "Tic-Tac-Toe – React & JavaScript",
-        descript: "Un mini-jeu développé avec React pour pratiquer la logique de jeu, la gestion d'état et les interfaces interactives. Il inclut une grille 3x3 dynamique, la vérification des victoires/défaites/égalité, et une IA basique pour l'entraînement. Ce projet démontre la capacité à concevoir des interfaces réactives et à structurer efficacement la logique front-end.",
+        descript: "A mini-game built with React to practice game logic, state management, and interactive interfaces. Features include a dynamic 3x3 grid, win/loss/draw detection, and a basic AI for training. This project demonstrates the ability to design responsive interfaces and efficiently structure front-end logic.",
         langue: [
-            { icon: iconReact, nameLangue: "React"},
-            { icon: iconJS, nameLangue: "JavaScript"}
+            { icon: iconReact, nameLangue: "React" },
+            { icon: iconJS, nameLangue: "JavaScript" }
         ],
         image: [
-            { icon: imgProjet21, nameLangue: "img"},
-            { icon: imgProjet22, nameLangue: "img"},
-            { icon: imgProjet23, nameLangue: "img"},
-            { icon: imgProjet24, nameLangue: "img"}
+            { icon: imgProjet21, nameLangue: "img" },
+            { icon: imgProjet22, nameLangue: "img" },
+            { icon: imgProjet23, nameLangue: "img" },
+            { icon: imgProjet24, nameLangue: "img" }
         ]
     },
     { 
         id: 3,
-        date: "juillet 2025 - présent",
-        name: "Site web de gestion interne du salon de thé MON AMOUR",
-        descript: "Ce projet constitue une initiative concrète visant à optimiser et centraliser la gestion des opérations du salon de thé où je travaille, en couvrant notamment le suivi des stocks, la génération de rapports financiers, la gestion du personnel et de leurs horaires, ainsi que la gestion des produits. Il m’a permis de répondre à un besoin réel et de proposer des solutions efficaces aux difficultés rencontrées dans l’utilisation quotidienne des outils existants. Par ailleurs, ce projet m’a également offert l’opportunité de développer des compétences techniques supplémentaires, notamment en matière d’hébergement web via Firebase. Actuellement, je suis toujours en train de afin d’offrir une interface plus attrayante et d’intégrer les fonctionnalités nécessaires à une utilisation optimale.",
+        date: "July 2025 - Present",
+        name: "Internal Management Website for MON AMOUR Tea Salon",
+        descript: "A real-world project aimed at optimizing and centralizing the operations of the tea salon where I work. Key features include stock tracking, financial report generation, staff management and scheduling, and product management. This project allowed me to address real operational challenges and propose effective solutions while also enhancing my technical skills, including web hosting with Firebase. Currently, I am improving the interface and integrating additional functionalities for an optimal user experience.",
         langue: [
-            { icon: iconFireBase, nameLangue: "FireBase"},
-            { icon: iconFigma, nameLangue: "FireBase"},
-            { icon: iconJS, nameLangue: "FireBase"},
-            { icon: iconReact, nameLangue: "FireBase"}
+            { icon: iconFireBase, nameLangue: "Firebase" },
+            { icon: iconFigma, nameLangue: "Figma" },
+            { icon: iconJS, nameLangue: "JavaScript" },
+            { icon: iconReact, nameLangue: "React" }
         ],
         image: [
-            { icon: imgProjet31, nameLangue: "img"},
-            { icon: imgProjet32, nameLangue: "img"},
-            { icon: imgProjet33, nameLangue: "img"},
-            { icon: imgProjet34, nameLangue: "img"},
-            { icon: imgProjet34, nameLangue: "img"}
+            { icon: imgProjet31, nameLangue: "img" },
+            { icon: imgProjet32, nameLangue: "img" },
+            { icon: imgProjet33, nameLangue: "img" },
+            { icon: imgProjet34, nameLangue: "img" },
+            { icon: imgProjet35, nameLangue: "img" }
         ]
     }
 ];
+
 
 export default function CardProjectPer() {
 

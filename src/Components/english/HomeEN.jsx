@@ -13,7 +13,7 @@ export default function HomeEN() {
             <div className="home" id="Home">
                 <div className="text">
                     <p>Hello everyone !</p>
-                    <h1>Engineer<br/>in Cybersecurity</h1>
+                    <h1>Cybersecurity<br/>Analyst</h1>
                 </div>
                 <div className="image">
                     <div className="oval"></div>
@@ -46,7 +46,7 @@ export default function HomeEN() {
                             }
                         }}
                     >
-                        Contactez-moi
+                        Contact me
                     </button>
                 </div>
             </div>

@@ -1,0 +1,194 @@
+import React from "react";
+import '../Styles/time-line-edu/time-line-edu.css';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import eduIcon from '../assets/icon/graduation-cap.svg';
+
+export default function TimeLineEdu() {
+    return (
+        <>
+            <VerticalTimeline
+                lineColor="#ffffff"
+                className="timeline-education"
+                layout="1-column-left"
+            >
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentArrowStyle={{ 
+                        borderRight: '8px solid rgb(0, 0, 0)' 
+                    }}
+                    contentStyle={{
+                        backgroundColor: '#ffffff',
+                        boxShadow: '5px 5px 0px rgb(225, 255, 0)',
+                        borderRadius: '20px'
+                    }}
+                    dateClassName="date-timeline"
+                    date="2025 - 2026"
+                    icon={
+                        <div style={{ 
+                        width: '100%', 
+                        height: '100%', 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center' 
+                        }}>
+                        <img 
+                            src={eduIcon} 
+                            alt="education icon" 
+                            style={{ 
+                                width: '50%', 
+                                height: '50%', 
+                                objectFit: 'cover' 
+                            }}
+                        />
+                        </div>
+                    }
+                    iconStyle={{ 
+                        background: '#DEF246',
+                        boxShadow: '0px 0px 10px #000000'
+                    }}
+                    shadowSize="large"
+                    style={{
+                        width: '100%'
+                    }}
+                >
+                    <h3 className="vertical-timeline-element-title">IUT d'Orsay | Université Paris-Saclay</h3>
+                    <h4 className="vertical-timeline-element-subtitle">France</h4>
+                    <p className="description-formation">Bachelor’s Degree Student, 2nd Year - Path B: Deployment of Secure and Communicative Applications</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentArrowStyle={{ 
+                        borderRight: '8px solid rgb(0, 0, 0)' 
+                    }}
+                    contentStyle={{
+                        backgroundColor: '#ffffff',
+                        boxShadow: '5px 5px 0px #DEF246',
+                        borderRadius: '20px'
+                    }}
+                    dateClassName="date-timeline"
+                    date="2024 - 2025"
+                    icon={
+                        <div style={{ 
+                        width: '100%', 
+                        height: '100%', 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center' 
+                        }}>
+                        <img 
+                            src={eduIcon} 
+                            alt="education icon" 
+                            style={{ 
+                            width: '50%', 
+                            height: '50%', 
+                            objectFit: 'cover' 
+                            }} 
+                        />
+                        </div>
+                    }
+                    iconStyle={{ 
+                        background: '#DEF246',
+                        boxShadow: '0px 0px 10px #000000'
+                    }}
+                    shadowSize="large"
+                    style={{
+                        width: '100%'
+                    }}
+                >
+                    <h3 className="vertical-timeline-element-title">IUT d'Orsay | Université Paris-Saclay</h3>
+                    <h4 className="vertical-timeline-element-subtitle">France</h4>
+                    <p className="description-formation">Bachelor’s Degree Student, 1st Year – Computer Science</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentArrowStyle={{ 
+                        borderRight: '8px solid rgb(0, 0, 0)' 
+                    }}
+                    contentStyle={{
+                        backgroundColor: '#ffffff',
+                        boxShadow: '5px 5px 0px #DEF246',
+                        borderRadius: '20px'
+                    }}
+                    dateClassName="date-timeline"
+                    date="2023 - 2024"
+                    icon={
+                        <div style={{ 
+                        width: '100%', 
+                        height: '100%', 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center' 
+                        }}>
+                        <img 
+                            src={eduIcon} 
+                            alt="education icon" 
+                            style={{ 
+                            width: '50%', 
+                            height: '50%', 
+                            objectFit: 'cover' 
+                            }} 
+                        />
+                        </div>
+                    }
+                    iconStyle={{ 
+                        background: '#DEF246',
+                        boxShadow: '0px 0px 10px #000000'
+                    }}
+                    shadowSize="large"
+                    style={{
+                        width: '100%'
+                    }}
+                >
+                    <h3 className="vertical-timeline-element-title">Program – DU FLE (Université Paris-Saclay)</h3>
+                    <h4 className="vertical-timeline-element-subtitle">France</h4>
+                    <p className="description-formation">University Diploma in French as a Foreign Language</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentArrowStyle={{ 
+                        borderRight: '8px solid rgb(0, 0, 0)' 
+                    }}
+                    contentStyle={{
+                        backgroundColor: '#ffffff',
+                        boxShadow: '5px 5px 0px #DEF246',
+                        borderRadius: '20px'
+                    }}
+                    dateClassName="date-timeline"
+                    date="2020 - 2023"
+                    icon={
+                        <div style={{ 
+                        width: '100%', 
+                        height: '100%', 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        alignItems: 'center' 
+                        }}>
+                        <img 
+                            src={eduIcon} 
+                            alt="education icon" 
+                            style={{ 
+                            width: '50%', 
+                            height: '50%', 
+                            objectFit: 'cover' 
+                            }} 
+                        />
+                        </div>
+                    }
+                    iconStyle={{ 
+                        background: '#DEF246',
+                        boxShadow: '0px 0px 10px #000000'
+                    }}
+                    shadowSize="large"
+                    style={{
+                        width: '100%'
+                    }}
+                >
+                    <h3 className="vertical-timeline-element-title">Hoang Van Thu High School of Excellence</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Vietnam</h4>
+                    <p className="description-formation">Student in the French elective class</p>
+                </VerticalTimelineElement>
+            </VerticalTimeline>
+        </>
+    );
+}

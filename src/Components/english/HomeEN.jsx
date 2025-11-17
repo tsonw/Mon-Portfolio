@@ -13,7 +13,8 @@ export default function HomeEN() {
             <div className="home" id="Home">
                 <div className="text">
                     <p>Hello everyone !</p>
-                    <h1>Cybersecurity<br/>Analyst</h1>
+                    <h1>Future Security Analyst</h1>
+                    <h1>IT Student</h1>
                 </div>
                 <div className="image">
                     <div className="oval"></div>

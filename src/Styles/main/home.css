@@ -62,7 +62,8 @@ body {
 
 .home > .text > h1 {
     font-family: 'Outfit', sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
+    margin-top: 20px;
     animation: animation-titre-text 0.5s ease-in-out forwards;
 }
 

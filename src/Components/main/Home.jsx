@@ -14,7 +14,8 @@ export default function Home() {
             <div className="home" id="Home">
                 <div className="text">
                     <p>Bonjour à tous !</p>
-                    <h1>Analyste<br/>En Cybersécurité</h1>
+                    <h1>Futur Analyste en Cybersécurité</h1>
+                    <h1>Étudiant en IT</h1>
                 </div>
                 <div className="image">
                     <div className="oval"></div>

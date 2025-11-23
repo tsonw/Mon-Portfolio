@@ -17,6 +17,10 @@ import imgProjet32 from '../assets/projet/personnel/monAmour/2.png';
 import imgProjet33 from '../assets/projet/personnel/monAmour/3.png';
 import imgProjet34 from '../assets/projet/personnel/monAmour/4.png';
 import imgProjet35 from '../assets/projet/personnel/monAmour/5.png';
+import imgProjet36 from '../assets/projet/personnel/monAmour/6.png';
+import imgProjet37 from '../assets/projet/personnel/monAmour/7.png';
+import imgProjet38 from '../assets/projet/personnel/monAmour/8.png';
+import imgProjet39 from '../assets/projet/personnel/monAmour/9.png';
 
 import iconPTS from '../assets/icon/skill/photoshop.png';
 import iconAI from '../assets/icon/skill/illustrator.png';
@@ -96,7 +100,11 @@ const listProjets = [
             { icon: imgProjet32, nameLangue: "img"},
             { icon: imgProjet33, nameLangue: "img"},
             { icon: imgProjet34, nameLangue: "img"},
-            { icon: imgProjet34, nameLangue: "img"}
+            { icon: imgProjet35, nameLangue: "img"},
+            { icon: imgProjet36, nameLangue: "img"},
+            { icon: imgProjet37, nameLangue: "img"},
+            { icon: imgProjet38, nameLangue: "img"},
+            { icon: imgProjet39, nameLangue: "img"},
         ]
     }
 ];

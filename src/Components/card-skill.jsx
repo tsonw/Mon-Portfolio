@@ -33,6 +33,7 @@ const listSkills = [
         langue: [
             { icon: iconHTML, nameLangue: "HTML"},
             { icon: iconCSS, nameLangue: "CSS"},
+            { icon: iconJS, nameLangue: "JavaScript"},
             { icon: iconReact, nameLangue: "React"}
         ] 
     },
@@ -42,7 +43,6 @@ const listSkills = [
         langue: [
             { icon: iconCpp, nameLangue: "C++"},
             { icon: iconJava, nameLangue: "Java"},
-            { icon: iconJS, nameLangue: "JavaScript"},
             { icon: iconPython, nameLangue: "Python"},
             { icon: iconPhp, nameLangue: "Php"}
         ]
@@ -90,7 +90,7 @@ export default function CardSkill() {
     return (
         <>
             {listSkills.map((item) => ( 
-                <div key={item.id}>
+                <div key={item.id} className="card-skills">
                     <h2 className="titre-box-skill">{item.name}</h2>
                     <div className="box-skill">
                         <li key={item.id} className="box-skill-item">

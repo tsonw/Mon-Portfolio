@@ -1,10 +1,10 @@
 import React from "react";
 import '../../Styles/main/contact.css';
 
-import iconPhone from '../../assets/icon/telephone.gif';
-import iconMail from '../../assets/icon/message.gif';
+import iconPhone from '../../assets/icon/telephone.png';
+import iconMail from '../../assets/icon/message.png';
 
-import iconGithub from '../../assets/icon/skill/github.png';
+import iconGithub from '../../assets/icon/github.png';
 import iconIns from '../../assets/icon/instagram.png';
 import iconThreads from '../../assets/icon/threads.png';
 import iconFb from '../../assets/icon/facebook.png';
@@ -56,7 +56,10 @@ export default function Contact() {
                             <div className="box-social-icon" key={item.id}>
                                 <li key={item.id} className="icon-social">
                                     <a href={item.link} className="icon-social-link">
-                                        <img src={item.icon} draggable="false" className="icon-social-content" alt="Phone" />
+                                        <span className="svgContainer">
+                                            <img src={item.icon} draggable="false" className="icon-social-content" alt="Phone" />
+                                        </span>
+                                        <span className="BG"></span>
                                     </a>
                                 </li>
                             </div>

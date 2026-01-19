@@ -1,29 +1,26 @@
 import React from "react";
 import '../../Styles/main/Home.css';
-import mainPNG from '../../assets/main.png'
-import main from '../../assets/main.webp'
-import gif1 from '../../assets/retina.gif'
-import gif2 from '../../assets/encryption.gif'
-import gif3 from '../../assets/fingerprint-scan.gif'
-import gif4 from '../../assets/cybersecurity.gif'
+import main from '../../assets/main-avt.png'
 
 export default function Home() {
 
     return (
         <>
-            <div className="home" id="Home">
+            <div className="home" id="home">
                 <div className="text">
-                    <p>Bonjour à tous !</p>
-                    <h1>Futur Analyste en Cybersécurité</h1>
-                    <h1>Étudiant en IT</h1>
+                    <p>Bonjour, je m’appelle Thai Son</p>
+                    <span className="top_text">DÉVELOPPEUR</span>
+                    <div className="under_text">
+                        {("BACK-END").split("").map((ch, i) => (
+                            <span key={i} className="lettre">
+                                {ch === " " ? "\u00A0" : ch}
+                            </span>
+                        ))}
+                    </div>
                 </div>
                 <div className="image">
                     <div className="oval"></div>
                     <img src={main} draggable="false" alt="Main" />
-                    <div className="gif-1" draggable="false" style={{ backgroundImage: `url(${gif1})`}}></div>
-                    <div className="gif-2" draggable="false" style={{ backgroundImage: `url(${gif2})`}}></div>
-                    <div className="gif-3" draggable="false" style={{ backgroundImage: `url(${gif3})`}}></div>
-                    <div className="gif-4" draggable="false" style={{ backgroundImage: `url(${gif4})`}}></div>
                 </div>
                 <div className="button-function">
                     <button 
@@ -36,20 +33,17 @@ export default function Home() {
                                 el.scrollIntoView({ behavior: 'smooth' });
                             }
                         }}
-                    >
-                        En savoir plus
-                    </button>
-                    <button href="#" className="Contactez-moi" onClick={(e) => {
+                    >En savoir plus</button>
+                    <button 
+                        className="Contactez-moi" onClick={(e) => {
                             e.preventDefault();
-                            const el = document.getElementById('contact');
+                            const el = document.getElementById('projets');
                             console.log('element about:', el);
                             if (el) {
                                 el.scrollIntoView({ behavior: 'smooth' });
                             }
                         }}
-                    >
-                        Contactez-moi
-                    </button>
+                    >Mes projets</button>
                 </div>
             </div>
         </>

@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:5173/Mon-Portfolio/ -->
+<html lang="en" style="--line-color: #ffffff;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/Mon-Portfolio/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./Mon Portfolio _ Thai Son_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml/png" href="./Mon Portfolio _ Thai Son_files/LogoTS.png">
+    <link rel="stylesheet" href="./Mon Portfolio _ Thai Son_files/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Mon Portfolio _ Thai Son_files/css2" rel="stylesheet">
+    <title>Mon Portfolio | Thai Son</title>
+  <style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/main/home.css">@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home::before {
+    content: "";
+    width: 100%;
+    height: 5%;
+    background: linear-gradient(to top, #FFFFFF, #ffffff00 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.home > .text {
+    display: inline-grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    width: 100%;
+    animation: animation-titre-text 0.5s ease-in-out forwards;
+}
+
+.home > .text > p {
+    font-size: 2rem;
+    font-weight: 300;
+    border-radius: 100px;
+    text-align: center;
+    animation: animation-bonjour-text 0.5s ease-in-out forwards;
+}
+
+@keyframes animation-bonjour-text {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home > .text > .top_text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-size: 200px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.home > .text > .under_text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    color: #D9D9D9;
+    padding: 0 20px;
+    font-size: 250px;
+    font-weight: 700;
+    line-height: 200px;
+    text-align: center;
+}
+
+.home > .text > .under_text::before {
+    content: "Basé à Paris";
+    position: absolute;
+    bottom: -90px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    color: #000000;
+    padding: 0 20px;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 40px;
+    text-align: left;
+}
+
+.home > .text > .under_text::after {
+    content: "Étudiant en informatique";
+    position: absolute;
+    bottom: -90px;
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+    width: calc(100% - 45px);
+    color: #000000;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 40px;
+    text-align: right;
+}
+
+@keyframes animation-titre-text {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    70% {
+        opacity: 1;
+        scale: 1.1;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.image {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    transform: translateX(-50%) translateY(50%);
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.image > .oval {
+    background-image: url("/Mon-Portfolio/src/assets/avatarBG.svg");
+    height: 70%;
+    aspect-ratio: 1 / 1;
+    transform: scale(0.4);
+    opacity: 0.2;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    animation: spin 100s linear infinite;
+}
+
+@keyframes animation-img {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    70% {
+        opacity: 1;
+        scale: 1.2;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.image > img {
+    height: 60%;
+    position: absolute;
+    bottom: 50%;
+    filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.4));
+    animation: animation-avatar 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+@keyframes animation-avatar {
+    0% {
+        opacity: 1;
+        transform: translateY(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.button-function {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 800px;
+    bottom: 50px;
+    animation: animation-button-function 0.5s 0.3s ease-in-out forwards;
+    z-index: 11;
+    opacity: 0;
+}
+
+@keyframes animation-button-function {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    70% {
+        opacity: 1;
+        scale: 1.2;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.button-function > .En-savoir-plus {
+    font-family: "Lexend", sans-serif;
+    width: 40%;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    background-color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.button-function > .En-savoir-plus:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button-function > .En-savoir-plus:active {
+    position: relative;
+    top: 2px;
+}
+
+.button-function > .Contactez-moi {
+    font-family: "Lexend", sans-serif;
+    width: 40%;
+    height: 50px;
+    color: #000000;
+    border: #000000 solid 2px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    background: hwb(0 100% 0% / 0.5);
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease-out;
+}
+
+.button-function > .Contactez-moi:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button-function > .Contactez-moi:active {
+    position: relative;
+    top: 2px;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/navBar/navBar.css">@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    justify-items: center;
+    align-items: center;
+    padding: 0 50px;
+    background-color: rgba(253, 253, 253, 0.7);
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+    animation: animation-nav 0.5s ease-in-out forwards;;
+}
+
+@keyframes animation-nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo_link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+    height: 60%;
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2));
+}
+
+.panel_fonction {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar_fonction {
+    list-style: none;      
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    gap: 30px;     
+    margin-right: 50px;  
+}
+
+.navbar_fonction li {
+    list-style: none;      
+}
+
+.navbar_fonction > li > a {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar_fonction > li > a:hover {
+    text-shadow: 0 0 1px currentColor;
+}
+
+.navbar_fonction > li > a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: #181818 solid 2px;
+    transform: scale(0);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar_fonction > li > a:hover::before{
+    transform: scale(1);
+}
+
+.btn_contact {
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn_contact > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 200;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/main/about.css">@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* { box-sizing: border-box; }
+
+.about {
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    padding-top: 170px;
+    background-color: #181818;
+    overflow: hidden;
+    position: relative;
+}
+
+.about::before {
+    content: "";
+    width: 100%;
+    height: 5%;
+    background: linear-gradient(to bottom, #18181800, #000000 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 12;
+}
+
+.text-about {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    position: relative;
+    height: 100%;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 100px 0 170px;
+    position: relative;
+    z-index: 10;
+}
+
+.titre_1 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #3A3A3A;
+}
+
+.titre_2 {
+    font-family: "Lexend", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #FDFDFD;
+}
+
+.sous-titre-about {
+    font-family: "Lexend", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FDFDFD;
+}
+
+.contenu {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 35px;
+}
+
+.card-profile-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-profile-box > .photo_about {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 8;
+}
+
+.card-profile-box > .logo_about{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 15;
+    transform: scale(0.6);
+}
+
+.card-profile-box > .pattern_about1{
+    position: absolute;
+    top: 0;
+    right: 200px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about2{
+    position: absolute;
+    top: 0;
+    right: 400px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about3{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about4{
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about5{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about6{
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about7{
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.card-profile-box > .pattern_about8{
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    z-index: 15;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color: #1F1F1F;
+    z-index: 5;
+}
+
+.btn_download_CV {
+    color: rgba(255, 255, 255, 0.692);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.397);
+    background: rgba(255, 255, 255, 0.068);
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    gap: 20px;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    width: fit-content;
+}
+
+.btn_download_CV:hover {
+    border-color: rgba(255, 255, 255, 0.623);
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.144),
+        rgba(255, 255, 255, 0.247),
+        rgba(255, 255, 255, 0.39)
+    );
+    box-shadow: 0 6px rgba(255, 255, 255, 0.623);
+    transform: translateY(-6px);
+}
+
+.btn_download_CV:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.formation {
+    background-color: #000000;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formation_timeline {
+    border: #FDFDFD solid 4px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-text-formation {
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.titre-formation {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #ffffff;
+    width: 100%;
+
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/card-profile/card-profile.css">.card-profile {
+    height: calc(100% - 20%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: #ffffff solid 3px;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+
+.text-card-profile {
+    color: aqua;
+    padding: 4px 10px 10px 10px;
+    background: linear-gradient(to bottom, #00000000, #000000);
+}
+
+.name {
+    color: #ffffff;
+    text-shadow: 0px -2px 10px hsla(0, 0%, 0%, 0.8);
+    margin-bottom: 5px;
+}
+
+.sous-titre {
+    color: #ffffff;
+    text-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.8);
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+
+.descript {
+    color: #ffffff;
+    text-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.8);
+    font-size: smaller;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/time-line-edu/time-line-edu.css">.vertical-timeline-element-title {
+    color: black;
+}
+
+.vertical-timeline-element-subtitle {
+    color: black;
+}
+
+.description-formation {
+    color: black;
+}
+
+.date-timeline {
+    color: black;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/react-vertical-timeline-component/style.min.css">.vertical-timeline *{box-sizing:border-box}.vertical-timeline{width:95%;max-width:1170px;margin:0 auto;position:relative;padding:2em 0}.vertical-timeline::after{content:'';display:table;clear:both}.vertical-timeline::before{content:'';position:absolute;top:0;left:18px;height:100%;width:4px;background:var(--line-color)}.vertical-timeline.vertical-timeline--one-column-right::before{right:18px;left:unset}@media only screen and (min-width:1170px){.vertical-timeline.vertical-timeline--two-columns{width:90%}.vertical-timeline.vertical-timeline--two-columns:before{left:50%;margin-left:-2px}}.vertical-timeline-element{position:relative;margin:2em 0}.vertical-timeline-element>div{min-height:1px}.vertical-timeline-element:after{content:"";display:table;clear:both}.vertical-timeline-element:first-child{margin-top:0}.vertical-timeline-element:last-child{margin-bottom:0}@media only screen and (min-width:1170px){.vertical-timeline-element{margin:4em 0}.vertical-timeline-element:first-child{margin-top:0}.vertical-timeline-element:last-child{margin-bottom:0}}.vertical-timeline-element-icon{position:absolute;top:0;left:0;width:40px;height:40px;border-radius:50%}.vertical-timeline-element-icon.shadow-size-small{box-shadow:0 0 0 2px #fff,inset 0 1px 0 rgba(0,0,0,.08),0 2px 0 4px rgba(0,0,0,.05)}.vertical-timeline-element-icon.shadow-size-medium{box-shadow:0 0 0 3px #fff,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 5px rgba(0,0,0,.05)}.vertical-timeline-element-icon.shadow-size-large{box-shadow:0 0 0 4px #fff,inset 0 2px 0 rgba(0,0,0,.08),0 4px 0 6px rgba(0,0,0,.05)}.vertical-timeline--one-column-right .vertical-timeline-element-icon{right:0;left:unset}.vertical-timeline-element-icon svg{display:block;width:24px;height:24px;position:relative;left:50%;top:50%;margin-left:-12px;margin-top:-12px}@media only screen and (min-width:1170px){.vertical-timeline--two-columns .vertical-timeline-element-icon{width:60px;height:60px;left:50%;margin-left:-30px}}.vertical-timeline-element-icon{-webkit-transform:translateZ(0);-webkit-backface-visibility:hidden}.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden{visibility:hidden}.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in{visibility:visible;-webkit-animation:cd-bounce-1 .6s;-moz-animation:cd-bounce-1 .6s;animation:cd-bounce-1 .6s}@-webkit-keyframes cd-bounce-1{0%{opacity:0;-webkit-transform:scale(.5)}60%{opacity:1;-webkit-transform:scale(1.2)}100%{-webkit-transform:scale(1)}}@-moz-keyframes cd-bounce-1{0%{opacity:0;-moz-transform:scale(.5)}60%{opacity:1;-moz-transform:scale(1.2)}100%{-moz-transform:scale(1)}}@keyframes cd-bounce-1{0%{opacity:0;-webkit-transform:scale(.5);-moz-transform:scale(.5);-ms-transform:scale(.5);-o-transform:scale(.5);transform:scale(.5)}60%{opacity:1;-webkit-transform:scale(1.2);-moz-transform:scale(1.2);-ms-transform:scale(1.2);-o-transform:scale(1.2);transform:scale(1.2)}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1)}}.vertical-timeline-element-content{position:relative;margin-left:60px;background:#fff;border-radius:.25em;padding:1em;box-shadow:0 3px 0 #ddd}.vertical-timeline--one-column-right .vertical-timeline-element-content{margin-right:60px;margin-left:unset}.vertical-timeline-element--no-children .vertical-timeline-element-content{background:0 0;box-shadow:none}.vertical-timeline-element-content:after{content:"";display:table;clear:both}.vertical-timeline-element-content h2{color:#303e49}.vertical-timeline-element-content .vertical-timeline-element-date,.vertical-timeline-element-content p{font-size:13px;font-size:.8125rem;font-weight:500}.vertical-timeline-element-content .vertical-timeline-element-date{display:inline-block}.vertical-timeline-element-content p{margin:1em 0 0;line-height:1.6}.vertical-timeline-element-title{margin:0}.vertical-timeline-element-subtitle{margin:0}.vertical-timeline-element-content .vertical-timeline-element-date{float:left;padding:.8em 0;opacity:.7}.vertical-timeline-element-content-arrow{content:'';position:absolute;top:16px;right:100%;height:0;width:0;border:7px solid transparent;border-right:7px solid #fff}.vertical-timeline--one-column-right .vertical-timeline-element-content-arrow{content:'';position:absolute;top:16px;right:unset;left:100%;height:0;width:0;border:7px solid transparent;border-left:7px solid #fff}.vertical-timeline--one-column-right .vertical-timeline-element-content::before{left:100%;border-left:7px solid #fff;border-right:unset}.vertical-timeline-element--no-children .vertical-timeline-element-content::before{display:none}.vertical-timeline-element--no-children .vertical-timeline-element-content-arrow{display:none}@media only screen and (min-width:768px){.vertical-timeline-element-content h2{font-size:20px;font-size:1.25rem}.vertical-timeline-element-content p{font-size:16px;font-size:1rem}.vertical-timeline-element-content .vertical-timeline-element-date{font-size:14px;font-size:.875rem}}@media only screen and (min-width:1170px){.vertical-timeline--two-columns .vertical-timeline-element-content{margin-left:0;padding:1.5em;width:44%}.vertical-timeline--two-columns .vertical-timeline-element-content-arrow{top:24px;left:100%;transform:rotate(180deg)}.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date{position:absolute;width:100%;left:124%;top:6px;font-size:16px;font-size:1rem}.vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content,.vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content{float:right}.vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow,.vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow{top:24px;left:auto;right:100%;transform:rotate(0)}.vertical-timeline--one-column-right .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow,.vertical-timeline--one-column-right .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow{top:24px;left:100%;right:auto;transform:rotate(0)}.vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date,.vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date{left:auto;right:124%;text-align:right}}.vertical-timeline--animate .vertical-timeline-element-content.is-hidden{visibility:hidden}.vertical-timeline--animate .vertical-timeline-element-content.bounce-in{visibility:visible;-webkit-animation:cd-bounce-2 .6s;-moz-animation:cd-bounce-2 .6s;animation:cd-bounce-2 .6s}@media only screen and (min-width:1170px){.vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in,.vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in{-webkit-animation:cd-bounce-2-inverse .6s;-moz-animation:cd-bounce-2-inverse .6s;animation:cd-bounce-2-inverse .6s}}@media only screen and (max-width:1169px){.vertical-timeline--animate .vertical-timeline-element-content.bounce-in{visibility:visible;-webkit-animation:cd-bounce-2-inverse .6s;-moz-animation:cd-bounce-2-inverse .6s;animation:cd-bounce-2-inverse .6s}}@-webkit-keyframes cd-bounce-2{0%{opacity:0;-webkit-transform:translateX(-100px)}60%{opacity:1;-webkit-transform:translateX(20px)}100%{-webkit-transform:translateX(0)}}@-moz-keyframes cd-bounce-2{0%{opacity:0;-moz-transform:translateX(-100px)}60%{opacity:1;-moz-transform:translateX(20px)}100%{-moz-transform:translateX(0)}}@keyframes cd-bounce-2{0%{opacity:0;-webkit-transform:translateX(-100px);-moz-transform:translateX(-100px);-ms-transform:translateX(-100px);-o-transform:translateX(-100px);transform:translateX(-100px)}60%{opacity:1;-webkit-transform:translateX(20px);-moz-transform:translateX(20px);-ms-transform:translateX(20px);-o-transform:translateX(20px);transform:translateX(20px)}100%{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes cd-bounce-2-inverse{0%{opacity:0;-webkit-transform:translateX(100px)}60%{opacity:1;-webkit-transform:translateX(-20px)}100%{-webkit-transform:translateX(0)}}@-moz-keyframes cd-bounce-2-inverse{0%{opacity:0;-moz-transform:translateX(100px)}60%{opacity:1;-moz-transform:translateX(-20px)}100%{-moz-transform:translateX(0)}}@keyframes cd-bounce-2-inverse{0%{opacity:0;-webkit-transform:translateX(100px);-moz-transform:translateX(100px);-ms-transform:translateX(100px);-o-transform:translateX(100px);transform:translateX(100px)}60%{opacity:1;-webkit-transform:translateX(-20px);-moz-transform:translateX(-20px);-ms-transform:translateX(-20px);-o-transform:translateX(-20px);transform:translateX(-20px)}100%{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/main/skills.css">.panel-skill {
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills {
+    background-color: #ffffff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-text-skills {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.titre-skill {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #000000;
+}
+
+.skills-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    height: fit-content;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/card-skill/card-skill.css">.card-skills {
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding-left: 50px;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    transition: all 0.3s ease-out;
+}
+
+.box-skill {
+    color: black;
+    height: 100%;
+    gap: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.card-skills:hover {
+    border-color: #000000;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-skills:hover .titre-box-skill {
+    left: 0;
+    color: #000000;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 10000px;
+    border: #000000 solid 2px;
+}
+
+.box-skill-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-box-skill {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    color: #3A3A3A;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box-skill-langue-item {
+    list-style-type: none;
+    margin: 10%;
+}
+
+.skill-langue {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-skill-langue-box {
+    width: 18%;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: #ffffff solid 3px;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-skill-langue {
+    width: 70%;
+}
+
+.name-skill-langue-text {
+    color: #3A3A3A;
+    margin-left: 5%;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/main/contact.css">.panel-contact {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 100px;
+}
+
+.contact {
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-contact {
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact-info-box {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.box-contact-info {
+    color: #000000;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border: #3A3A3A solid 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.info-box-content {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon-contact-info-box {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-right: 50px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.icon-contact-info-content {
+    width: 50%;
+}
+
+.text-contact-info-content {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.social-media {
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-social-icon {
+    width: 10%;
+    aspect-ratio: 1/1;
+}
+
+.icon-social {
+    width: 100%;
+    aspect-ratio: 1/1;
+    list-style-type: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.icon-social-link {
+    width: 80px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    z-index: 3;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.icon-social-link:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.icon-social-link:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+}
+
+.icon-social-content {
+    width: 60%;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/main/projet.css">.panel-projet {
+    padding-top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projets {
+    background-color: #ffffff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-text-projets {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.panel_btn_choix {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.panel_btn_choix > button {
+    background-color: transparent;
+    color: #1C1C1C;
+    padding: 10px 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.titre-projet {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #000000;
+}
+
+.projets-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    height: fit-content;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/card-skill/card-projet.css">.card-projets {
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding-left: 50px;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    transition: all 0.3s ease-out;
+}
+
+.box-projet {
+    color: black;
+    height: 100%;
+    gap: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.card-projets:hover {
+    border-color: #000000;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-projets:hover .titre-box-projet {
+    left: 0;
+    color: #000000;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 10000px;
+    border: #000000 solid 2px;
+}
+
+.box-projet-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-box-projet {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    color: #3A3A3A;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box-projet-langue-item {
+    list-style-type: none;
+    margin: 10%;
+}
+
+.projet-langue {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-projet-langue-box {
+    width: 18%;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: #ffffff solid 3px;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-projet-langue {
+    width: 70%;
+}
+
+.name-projet-langue-text {
+    color: #3A3A3A;
+    margin-left: 5%;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}</style><style type="text/css" data-vite-dev-id="/Users/thaison/Documents/dev/Mon-Portfolio/src/Styles/navBar/btn-langue.css">@keyframes animation-nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button_langue {
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.button_langue > ul {
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_langue > ul > li > a {
+    color: #000000;
+    font-size: 16px;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+}
+
+.button_langue > ul > li > a:hover {
+    text-shadow: 0 0 1px currentColor;
+}
+
+.button_langue > ul > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: #181818 solid 2px;
+    transform: scale(0);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button_langue > ul > li > a:hover::before {
+    transform: scale(1);
+}
+
+</style></head>
+  <body>
+    <div id="root"><nav class="navbar"><a class="logo_link" href="http://localhost:5173/Mon-Portfolio/"><img class="logo" draggable="false" alt="Logo" src="./Mon Portfolio _ Thai Son_files/LogoTS.png"></a><div class="panel_fonction"><ul class="navbar_fonction"><li><a href="http://localhost:5173/Mon-Portfolio/">À propos</a></li><li><a href="http://localhost:5173/Mon-Portfolio/">Compétences</a></li><li><a href="http://localhost:5173/Mon-Portfolio/">Projets</a></li></ul><div class="button_langue"><ul><li><a href="http://localhost:5173/Mon-Portfolio" data-discover="true">FR</a></li><li><a href="http://localhost:5173/Mon-Portfolio/english" data-discover="true">EN</a></li><li><a href="http://localhost:5173/Mon-Portfolio/vietnam" data-discover="true">VI</a></li></ul></div><div class="btn_contact"><a href="http://localhost:5173/Mon-Portfolio/">Contactez-moi</a></div></div></nav><div class="home" id="home"><div class="text"><p>Bonjour, je m’appelle Thai Son</p><span class="top_text">DÉVELOPPEUR</span><div class="under_text"><span class="lettre">B</span><span class="lettre">A</span><span class="lettre">C</span><span class="lettre">K</span><span class="lettre">-</span><span class="lettre">E</span><span class="lettre">N</span><span class="lettre">D</span></div></div><div class="image"><div class="oval"></div><img draggable="false" alt="Main" src="./Mon Portfolio _ Thai Son_files/main-avt.png"></div><div class="button-function"><button class="En-savoir-plus">En savoir plus</button><button class="Contactez-moi">Mes projets</button></div></div><div class="about" id="about"><div class="text-about"><div class="box-text"><h2 class="titre_1">BONJOUR</h2><h2 class="titre_2">JE SUIS THAI SON</h2><p class="sous-titre-about">ÉTUDIANT EN 2E ANNÉE DE BUT INFORMATIQUE (IUT D’ORSAY)<br>À LA RECHERCHE D’UN STAGE EN DÉVELOPPEUR INFORMATIQUE</p><p class="contenu">Je suis originaire du Vietnam et passionné par la programmation, avec un intérêt particulier pour la cybersécurité. Curieux, rigoureux et motivé, je me forme en continu aux nouvelles technologies afin de renforcer mes compétences techniques et d’approfondir ma compréhension des systèmes informatiques.<br>Dans le cadre de mon parcours en informatique, je suis actuellement à la recherche d’un stage en informatique afin de mettre en pratique mes connaissances, contribuer à des projets concrets, collaborer au sein d’une équipe et progresser dans un environnement stimulant. Mon objectif est de continuer à évoluer dans ce domaine exigeant, tout en partageant ma passion et en donnant envie à d’autres de découvrir le plaisir du code.</p><a class="btn_download_CV" href="http://localhost:5173/Mon-Portfolio/CV_Stage.pdf" download=""><span>Consulter mon CV</span><svg viewBox="0 0 256 256" height="32" width="38" xmlns="http://www.w3.org/2000/svg"><path d="M74.34 85.66a8 8 0 0 1 11.32-11.32L120 108.69V24a8 8 0 0 1 16 0v84.69l34.34-34.35a8 8 0 0 1 11.32 11.32l-48 48a8 8 0 0 1-11.32 0ZM240 136v64a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h52.4a4 4 0 0 1 2.83 1.17L111 145a24 24 0 0 0 34 0l23.8-23.8a4 4 0 0 1 2.8-1.2H224a16 16 0 0 1 16 16m-40 32a12 12 0 1 0-12 12a12 12 0 0 0 12-12" fill="currentColor"></path></svg></a></div><div class="card-profile-box"><img class="logo_about" alt="logo" draggable="false" src="./Mon Portfolio _ Thai Son_files/logo.png"><img class="photo_about" alt="photo" draggable="false" src="./Mon Portfolio _ Thai Son_files/about.png"><div class="pattern_about1"></div><div class="pattern_about2"></div><div class="pattern_about3"></div><div class="pattern_about4"></div><div class="pattern_about5"></div><div class="pattern_about6"></div><div class="pattern_about7"></div><div class="pattern_about8"></div></div></div></div><div class="formation" id="formation"><div class="box-text-formation"><h2 class="titre-formation">Formation</h2></div><div class="formation_timeline"><div class="education"><div class="timeline"><div class="timeline-education vertical-timeline vertical-timeline--animate vertical-timeline--one-column-left"><div id="" class="vertical-timeline-element--work vertical-timeline-element" style="width: 100%;"><span class="vertical-timeline-element-icon shadow-size-large is-hidden" style="background: rgb(255, 255, 255); box-shadow: rgb(0, 0, 0) 0px 0px 10px;"><div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"><img alt="education icon" src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27UTF-8%27?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2025.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%20version=%271.1%27%20id=%27Layer_1%27%20x=%270px%27%20y=%270px%27%20viewBox=%270%200%20512%20512%27%20style=%27enable-background:new%200%200%20512%20512;%27%20xml:space=%27preserve%27%20width=%27512%27%20height=%27512%27%3e%3cpath%20d=%27M470.549,111.573L313.237,36.629c-34.628-20.684-77.728-21.051-112.704-0.96L41.451,111.573%20c-0.597,0.299-1.216,0.619-1.792,0.96c-37.752,21.586-50.858,69.689-29.272,107.441c7.317,12.798,18.08,23.284,31.064,30.266%20l43.883,20.907V375.68c0.026,46.743,30.441,88.039,75.072,101.931c31.059,8.985,63.264,13.384,95.595,13.056%20c32.326,0.362,64.531-4,95.595-12.949c44.631-13.891,75.046-55.188,75.072-101.931V271.104l42.667-20.395v175.957%20c0,11.782,9.551,21.333,21.333,21.333c11.782,0,21.333-9.551,21.333-21.333v-256C512.143,145.615,492.363,122.473,470.549,111.573z%20M384,375.787c0.011,27.959-18.129,52.69-44.8,61.077c-27.046,7.728-55.073,11.479-83.2,11.136%20c-28.127,0.343-56.154-3.408-83.2-11.136c-26.671-8.388-44.811-33.118-44.8-61.077v-84.309l70.763,33.707%20c17.46,10.368,37.401,15.816,57.707,15.765c19.328,0.137,38.331-4.98,54.976-14.805L384,291.477V375.787z%20M452.267,211.733%20l-160.896,76.8c-22.434,13.063-50.241,12.693-72.32-0.96l-157.419-74.88c-17.547-9.462-24.101-31.357-14.639-48.903%20c3.2-5.934,7.998-10.853,13.85-14.201l159.893-76.373c22.441-13.034,50.233-12.665,72.32,0.96l157.312,74.944%20c11.569,6.424,18.807,18.555,18.965,31.787C469.354,193.441,462.9,205.097,452.267,211.733L452.267,211.733z%27/%3e%3c/svg%3e" style="width: 50%; height: 50%; object-fit: cover;"></div></span><div class="vertical-timeline-element-content is-hidden" style="background-color: rgb(255, 255, 255); box-shadow: rgb(58, 58, 58) 5px 5px 0px; border-radius: 5px;"><div class="vertical-timeline-element-content-arrow" style="border-right: 8px solid rgba(255, 255, 255, 0);"></div><h3 class="vertical-timeline-element-title">IUT d'Orsay | Université Paris-Saclay</h3><h4 class="vertical-timeline-element-subtitle">France</h4><p class="description-formation">Étudiant en BUT 2 - Parcours B déploiement d'applications communicantes et sécurisées</p><span class="date-timeline vertical-timeline-element-date">2025 - 2026</span></div></div><div id="" class="vertical-timeline-element--work vertical-timeline-element" style="width: 100%;"><span class="vertical-timeline-element-icon shadow-size-large is-hidden" style="background: rgb(255, 255, 255); box-shadow: rgb(0, 0, 0) 0px 0px 10px;"><div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"><img alt="education icon" src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27UTF-8%27?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2025.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%20version=%271.1%27%20id=%27Layer_1%27%20x=%270px%27%20y=%270px%27%20viewBox=%270%200%20512%20512%27%20style=%27enable-background:new%200%200%20512%20512;%27%20xml:space=%27preserve%27%20width=%27512%27%20height=%27512%27%3e%3cpath%20d=%27M470.549,111.573L313.237,36.629c-34.628-20.684-77.728-21.051-112.704-0.96L41.451,111.573%20c-0.597,0.299-1.216,0.619-1.792,0.96c-37.752,21.586-50.858,69.689-29.272,107.441c7.317,12.798,18.08,23.284,31.064,30.266%20l43.883,20.907V375.68c0.026,46.743,30.441,88.039,75.072,101.931c31.059,8.985,63.264,13.384,95.595,13.056%20c32.326,0.362,64.531-4,95.595-12.949c44.631-13.891,75.046-55.188,75.072-101.931V271.104l42.667-20.395v175.957%20c0,11.782,9.551,21.333,21.333,21.333c11.782,0,21.333-9.551,21.333-21.333v-256C512.143,145.615,492.363,122.473,470.549,111.573z%20M384,375.787c0.011,27.959-18.129,52.69-44.8,61.077c-27.046,7.728-55.073,11.479-83.2,11.136%20c-28.127,0.343-56.154-3.408-83.2-11.136c-26.671-8.388-44.811-33.118-44.8-61.077v-84.309l70.763,33.707%20c17.46,10.368,37.401,15.816,57.707,15.765c19.328,0.137,38.331-4.98,54.976-14.805L384,291.477V375.787z%20M452.267,211.733%20l-160.896,76.8c-22.434,13.063-50.241,12.693-72.32-0.96l-157.419-74.88c-17.547-9.462-24.101-31.357-14.639-48.903%20c3.2-5.934,7.998-10.853,13.85-14.201l159.893-76.373c22.441-13.034,50.233-12.665,72.32,0.96l157.312,74.944%20c11.569,6.424,18.807,18.555,18.965,31.787C469.354,193.441,462.9,205.097,452.267,211.733L452.267,211.733z%27/%3e%3c/svg%3e" style="width: 50%; height: 50%; object-fit: cover;"></div></span><div class="vertical-timeline-element-content is-hidden" style="background-color: rgb(255, 255, 255); box-shadow: rgb(58, 58, 58) 5px 5px 0px; border-radius: 5px;"><div class="vertical-timeline-element-content-arrow" style="border-right: 8px solid rgba(255, 255, 255, 0);"></div><h3 class="vertical-timeline-element-title">IUT d'Orsay | Université Paris-Saclay</h3><h4 class="vertical-timeline-element-subtitle">France</h4><p class="description-formation">Étudiant en BUT 1 - en informatique</p><span class="date-timeline vertical-timeline-element-date">2025 - 2026</span></div></div><div id="" class="vertical-timeline-element--work vertical-timeline-element" style="width: 100%;"><span class="vertical-timeline-element-icon shadow-size-large is-hidden" style="background: rgb(255, 255, 255); box-shadow: rgb(0, 0, 0) 0px 0px 10px;"><div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"><img alt="education icon" src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27UTF-8%27?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2025.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%20version=%271.1%27%20id=%27Layer_1%27%20x=%270px%27%20y=%270px%27%20viewBox=%270%200%20512%20512%27%20style=%27enable-background:new%200%200%20512%20512;%27%20xml:space=%27preserve%27%20width=%27512%27%20height=%27512%27%3e%3cpath%20d=%27M470.549,111.573L313.237,36.629c-34.628-20.684-77.728-21.051-112.704-0.96L41.451,111.573%20c-0.597,0.299-1.216,0.619-1.792,0.96c-37.752,21.586-50.858,69.689-29.272,107.441c7.317,12.798,18.08,23.284,31.064,30.266%20l43.883,20.907V375.68c0.026,46.743,30.441,88.039,75.072,101.931c31.059,8.985,63.264,13.384,95.595,13.056%20c32.326,0.362,64.531-4,95.595-12.949c44.631-13.891,75.046-55.188,75.072-101.931V271.104l42.667-20.395v175.957%20c0,11.782,9.551,21.333,21.333,21.333c11.782,0,21.333-9.551,21.333-21.333v-256C512.143,145.615,492.363,122.473,470.549,111.573z%20M384,375.787c0.011,27.959-18.129,52.69-44.8,61.077c-27.046,7.728-55.073,11.479-83.2,11.136%20c-28.127,0.343-56.154-3.408-83.2-11.136c-26.671-8.388-44.811-33.118-44.8-61.077v-84.309l70.763,33.707%20c17.46,10.368,37.401,15.816,57.707,15.765c19.328,0.137,38.331-4.98,54.976-14.805L384,291.477V375.787z%20M452.267,211.733%20l-160.896,76.8c-22.434,13.063-50.241,12.693-72.32-0.96l-157.419-74.88c-17.547-9.462-24.101-31.357-14.639-48.903%20c3.2-5.934,7.998-10.853,13.85-14.201l159.893-76.373c22.441-13.034,50.233-12.665,72.32,0.96l157.312,74.944%20c11.569,6.424,18.807,18.555,18.965,31.787C469.354,193.441,462.9,205.097,452.267,211.733L452.267,211.733z%27/%3e%3c/svg%3e" style="width: 50%; height: 50%; object-fit: cover;"></div></span><div class="vertical-timeline-element-content is-hidden" style="background-color: rgb(255, 255, 255); box-shadow: rgb(58, 58, 58) 5px 5px 0px; border-radius: 5px;"><div class="vertical-timeline-element-content-arrow" style="border-right: 8px solid rgba(255, 255, 255, 0);"></div><h3 class="vertical-timeline-element-title">Programme DU - FLE (Université Paris-Saclay)</h3><h4 class="vertical-timeline-element-subtitle">France</h4><p class="description-formation">Diplôme d’Université en Français Langue Étrangère</p><span class="date-timeline vertical-timeline-element-date">2025 - 2026</span></div></div><div id="" class="vertical-timeline-element--work vertical-timeline-element" style="width: 100%;"><span class="vertical-timeline-element-icon shadow-size-large is-hidden" style="background: rgb(255, 255, 255); box-shadow: rgb(0, 0, 0) 0px 0px 10px;"><div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"><img alt="education icon" src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27UTF-8%27?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2025.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%20version=%271.1%27%20id=%27Layer_1%27%20x=%270px%27%20y=%270px%27%20viewBox=%270%200%20512%20512%27%20style=%27enable-background:new%200%200%20512%20512;%27%20xml:space=%27preserve%27%20width=%27512%27%20height=%27512%27%3e%3cpath%20d=%27M470.549,111.573L313.237,36.629c-34.628-20.684-77.728-21.051-112.704-0.96L41.451,111.573%20c-0.597,0.299-1.216,0.619-1.792,0.96c-37.752,21.586-50.858,69.689-29.272,107.441c7.317,12.798,18.08,23.284,31.064,30.266%20l43.883,20.907V375.68c0.026,46.743,30.441,88.039,75.072,101.931c31.059,8.985,63.264,13.384,95.595,13.056%20c32.326,0.362,64.531-4,95.595-12.949c44.631-13.891,75.046-55.188,75.072-101.931V271.104l42.667-20.395v175.957%20c0,11.782,9.551,21.333,21.333,21.333c11.782,0,21.333-9.551,21.333-21.333v-256C512.143,145.615,492.363,122.473,470.549,111.573z%20M384,375.787c0.011,27.959-18.129,52.69-44.8,61.077c-27.046,7.728-55.073,11.479-83.2,11.136%20c-28.127,0.343-56.154-3.408-83.2-11.136c-26.671-8.388-44.811-33.118-44.8-61.077v-84.309l70.763,33.707%20c17.46,10.368,37.401,15.816,57.707,15.765c19.328,0.137,38.331-4.98,54.976-14.805L384,291.477V375.787z%20M452.267,211.733%20l-160.896,76.8c-22.434,13.063-50.241,12.693-72.32-0.96l-157.419-74.88c-17.547-9.462-24.101-31.357-14.639-48.903%20c3.2-5.934,7.998-10.853,13.85-14.201l159.893-76.373c22.441-13.034,50.233-12.665,72.32,0.96l157.312,74.944%20c11.569,6.424,18.807,18.555,18.965,31.787C469.354,193.441,462.9,205.097,452.267,211.733L452.267,211.733z%27/%3e%3c/svg%3e" style="width: 50%; height: 50%; object-fit: cover;"></div></span><div class="vertical-timeline-element-content is-hidden" style="background-color: rgb(255, 255, 255); box-shadow: rgb(58, 58, 58) 5px 5px 0px; border-radius: 5px;"><div class="vertical-timeline-element-content-arrow" style="border-right: 8px solid rgba(255, 255, 255, 0);"></div><h3 class="vertical-timeline-element-title">Lycée d’excéllence Hoang Van Thu</h3><h4 class="vertical-timeline-element-subtitle">Vietnam</h4><p class="description-formation">Baccalauréat (équivalent) — Vietnam</p><span class="date-timeline vertical-timeline-element-date">2025 - 2026</span></div></div></div></div></div></div></div><div class="panel-skill" id="skills"><div class="skills"><div class="box-text-skills"><h2 class="titre-skill">Compétences</h2></div><div class="skills-box"><div class="card-skills"><h2 class="titre-box-skill">WEB Frontend</h2><div class="box-skill"><li class="box-skill-item"><ul><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/html-5.png"></div><h4 class="name-skill-langue-text">HTML</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/css-3.png"></div><h4 class="name-skill-langue-text">CSS</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/js.png"></div><h4 class="name-skill-langue-text">JavaScript</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/react.png"></div><h4 class="name-skill-langue-text">React</h4></div></li></ul></li></div></div><div class="card-skills"><h2 class="titre-box-skill">Programmation</h2><div class="box-skill"><li class="box-skill-item"><ul><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/c++.png"></div><h4 class="name-skill-langue-text">C++</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/java.png"></div><h4 class="name-skill-langue-text">Java</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/python.png"></div><h4 class="name-skill-langue-text">Python</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/php.png"></div><h4 class="name-skill-langue-text">Php</h4></div></li></ul></li></div></div><div class="card-skills"><h2 class="titre-box-skill">Bases de données</h2><div class="box-skill"><li class="box-skill-item"><ul><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/oracle.png"></div><h4 class="name-skill-langue-text">Oracle</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/MySQL.png"></div><h4 class="name-skill-langue-text">MySQL</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/SQLite.png"></div><h4 class="name-skill-langue-text">SQLite</h4></div></li></ul></li></div></div><div class="card-skills"><h2 class="titre-box-skill">Outils de conception</h2><div class="box-skill"><li class="box-skill-item"><ul><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/photoshop.png"></div><h4 class="name-skill-langue-text">Adobe Photoshop</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/illustrator.png"></div><h4 class="name-skill-langue-text">Adobe Illustrator</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/figma.png"></div><h4 class="name-skill-langue-text">Figma</h4></div></li></ul></li></div></div><div class="card-skills"><h2 class="titre-box-skill">Systèmes d’exploitation</h2><div class="box-skill"><li class="box-skill-item"><ul><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/window.png"></div><h4 class="name-skill-langue-text">Window</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/ubuntu.png"></div><h4 class="name-skill-langue-text">Linux Ubuntu</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/macos.png"></div><h4 class="name-skill-langue-text">macOS</h4></div></li></ul></li></div></div><div class="card-skills"><h2 class="titre-box-skill">Autres outils</h2><div class="box-skill"><li class="box-skill-item"><ul><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/github.png"></div><h4 class="name-skill-langue-text">Github</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/git.png"></div><h4 class="name-skill-langue-text">Git</h4></div></li><li class="box-skill-langue-item"><div class="skill-langue"><div class="icon-skill-langue-box"><img draggable="false" class="icon-skill-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/office.png"></div><h4 class="name-skill-langue-text">Microsoft Office</h4></div></li></ul></li></div></div></div></div></div><div class="panel-projet" id="projets"><div class="projets"><div class="box-text-projets"><h2 class="titre-projet">Projets réalisés</h2><div class="panel_btn_choix"><button>PERSONNELS</button><button>ACADÉMIQUES</button></div></div><div class="projets-box"><div class="card-projets"><h2 class="titre-box-projet">WEB Frontend</h2><div class="box-projet"><li class="box-projet-item"><ul><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/html-5.png"></div><h4 class="name-projet-langue-text">HTML</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/css-3.png"></div><h4 class="name-projet-langue-text">CSS</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/js.png"></div><h4 class="name-projet-langue-text">JavaScript</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/react.png"></div><h4 class="name-projet-langue-text">React</h4></div></li></ul></li></div></div><div class="card-projets"><h2 class="titre-box-projet">Programmation</h2><div class="box-projet"><li class="box-projet-item"><ul><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/c++.png"></div><h4 class="name-projet-langue-text">C++</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/java.png"></div><h4 class="name-projet-langue-text">Java</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/python.png"></div><h4 class="name-projet-langue-text">Python</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/php.png"></div><h4 class="name-projet-langue-text">Php</h4></div></li></ul></li></div></div><div class="card-projets"><h2 class="titre-box-projet">Bases de données</h2><div class="box-projet"><li class="box-projet-item"><ul><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/oracle.png"></div><h4 class="name-projet-langue-text">Oracle</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/MySQL.png"></div><h4 class="name-projet-langue-text">MySQL</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/SQLite.png"></div><h4 class="name-projet-langue-text">SQLite</h4></div></li></ul></li></div></div><div class="card-projets"><h2 class="titre-box-projet">Outils de conception</h2><div class="box-projet"><li class="box-projet-item"><ul><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/photoshop.png"></div><h4 class="name-projet-langue-text">Adobe Photoshop</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/illustrator.png"></div><h4 class="name-projet-langue-text">Adobe Illustrator</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/figma.png"></div><h4 class="name-projet-langue-text">Figma</h4></div></li></ul></li></div></div><div class="card-projets"><h2 class="titre-box-projet">Systèmes d’exploitation</h2><div class="box-projet"><li class="box-projet-item"><ul><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/window.png"></div><h4 class="name-projet-langue-text">Window</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/ubuntu.png"></div><h4 class="name-projet-langue-text">Linux Ubuntu</h4></div></li><li class="box-projet-langue-item"><div class="projet-langue"><div class="icon-projet-langue-box"><img draggable="false" class="icon-projet-langue" alt="Icon" src="./Mon Portfolio _ Thai Son_files/macos.png"></div><h4 class="name-projet-langue-text">macOS</h4></div></li></ul></li></div></div></div></div></div><div class="panel-contact" id="contact"><div class="contact"><h2 class="titre-contact">Contact</h2><div class="contact-info-box"><div class="box-contact-info"><li class="info-box-content"><div class="icon-contact-info-box"><img draggable="false" class="icon-contact-info-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/telephone.png"></div><h2 class="text-contact-info-content">+33 7 51 30 69 89</h2></li></div><div class="box-contact-info"><li class="info-box-content"><div class="icon-contact-info-box"><img draggable="false" class="icon-contact-info-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/message.png"></div><h2 class="text-contact-info-content">hoangthaison05dhp@gmail.com</h2></li></div></div><div class="social-media"><div class="box-social-icon"><li class="icon-social"><a href="https://github.com/tsonw" class="icon-social-link"><span class="svgContainer"><img draggable="false" class="icon-social-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/github(1).png"></span><span class="BG"></span></a></li></div><div class="box-social-icon"><li class="icon-social"><a href="https://www.instagram.com/tsonw_19/" class="icon-social-link"><span class="svgContainer"><img draggable="false" class="icon-social-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/instagram.png"></span><span class="BG"></span></a></li></div><div class="box-social-icon"><li class="icon-social"><a href="https://www.threads.net/@tsonw_19?xmt=AQGzCM9Lsu-MWXqbsco2sAvhR4E-3hbWLbdd-sXhVRA15X4" class="icon-social-link"><span class="svgContainer"><img draggable="false" class="icon-social-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/threads.png"></span><span class="BG"></span></a></li></div><div class="box-social-icon"><li class="icon-social"><a href="https://www.facebook.com/bibeeus" class="icon-social-link"><span class="svgContainer"><img draggable="false" class="icon-social-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/facebook.png"></span><span class="BG"></span></a></li></div><div class="box-social-icon"><li class="icon-social"><a href="https://www.linkedin.com/in/thai-son-hoang-648423332/" class="icon-social-link"><span class="svgContainer"><img draggable="false" class="icon-social-content" alt="Phone" src="./Mon Portfolio _ Thai Son_files/linkedin.png"></span><span class="BG"></span></a></li></div></div></div></div></div>
+    <script type="module" src="./Mon Portfolio _ Thai Son_files/main.jsx"></script>
+  
+
+<vite-error-overlay><template shadowrootmode="open"><div class="backdrop" part="backdrop"><div class="window" part="window"><pre class="message" part="message"><span class="plugin" part="plugin">[plugin:vite:react-babel] </span><span class="message-body" part="message-body">/Users/thaison/Documents/dev/Mon-Portfolio/src/Components/card-projet.jsx: Identifier 'dataProjet' has already been declared. (102:37)
+  105 |</span></pre><pre class="file" part="file"><a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/src/Components/card-projet.jsx:102:37</a></pre><pre class="frame" part="frame">100 |  ];
+101 |  
+102 |  export default function CardProjet({ dataProjet }) {
+    |                                       ^
+103 |      
+104 |      const [dataProjet, setDataProjet] = useState(listProjetPersonnes);</pre><pre class="stack" part="stack">    at constructor (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:367:19</a>)
+    at JSXParserMixin.raise (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:6627:19</a>)
+    at ScopeHandler.checkRedeclarationInScope (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:1644:19</a>)
+    at ScopeHandler.declareName (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:1627:14</a>)
+    at JSXParserMixin.declareNameFromIdentifier (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:7591:16</a>)
+    at JSXParserMixin.checkIdentifier (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:7587:12</a>)
+    at JSXParserMixin.checkLVal (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:7526:12</a>)
+    at JSXParserMixin.checkLVal (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:7568:12</a>)
+    at JSXParserMixin.checkLVal (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:7564:16</a>)
+    at JSXParserMixin.checkParams (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12132:12</a>)
+    at JSXParserMixin.&lt;anonymous&gt; (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12107:14</a>)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13332:48</a>)
+    at JSXParserMixin.parseBlockBody (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13309:10</a>)
+    at JSXParserMixin.parseBlock (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13297:10</a>)
+    at JSXParserMixin.parseFunctionBody (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12101:24</a>)
+    at JSXParserMixin.parseFunctionBodyAndFinish (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12087:10</a>)
+    at <a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13445:12</a>
+    at JSXParserMixin.withSmartMixTopicForbiddingContext (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12404:14</a>)
+    at JSXParserMixin.parseFunction (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13444:10</a>)
+    at JSXParserMixin.parseExportDefaultExpression (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13907:19</a>)
+    at JSXParserMixin.parseExport (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13828:25</a>)
+    at JSXParserMixin.parseStatementContent (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12878:27</a>)
+    at JSXParserMixin.parseStatementLike (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12767:17</a>)
+    at JSXParserMixin.parseModuleItem (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12744:17</a>)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13316:36</a>)
+    at JSXParserMixin.parseBlockBody (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:13309:10</a>)
+    at JSXParserMixin.parseProgram (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12625:10</a>)
+    at JSXParserMixin.parseTopLevel (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:12615:25</a>)
+    at JSXParserMixin.parse (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:14492:10</a>)
+    at parse (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/parser/lib/index.js:14526:38</a>)
+    at parser (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/core/lib/parser/index.js:41:34</a>)
+    at parser.next (&lt;anonymous&gt;)
+    at normalizeFile (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37</a>)
+    at normalizeFile.next (&lt;anonymous&gt;)
+    at run (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/core/lib/transformation/index.js:22:50</a>)
+    at run.next (&lt;anonymous&gt;)
+    at transform (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/core/lib/transform.js:22:33</a>)
+    at transform.next (&lt;anonymous&gt;)
+    at step (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:261:32</a>)
+    at <a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:273:13</a>
+    at async.call.result.err.err (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:223:11</a>)
+    at <a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:189:28</a>
+    at <a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/@babel/core/lib/gensync-utils/async.js:67:7</a>
+    at <a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:113:33</a>
+    at step (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:287:14</a>)
+    at <a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:273:13</a>
+    at async.call.result.err.err (<a class="file-link">/Users/thaison/Documents/dev/Mon-Portfolio/node_modules/gensync/index.js:223:11</a>)</pre><div class="tip" part="tip">Click outside, press <kbd>Esc</kbd> key, or fix the code to dismiss.<br>You can also disable this overlay by setting <code part="config-option-name">server.hmr.overlay</code> to <code part="config-option-value">false</code> in <code part="config-file-name">vite.config.js</code>.</div></div><style>
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  --monospace: 'SFMono-Regular', Consolas,
+  'Liberation Mono', Menlo, Courier, monospace;
+  --red: #ff5555;
+  --yellow: #e2aa53;
+  --purple: #cfa4ff;
+  --cyan: #2dd9da;
+  --dim: #c9c9c9;
+
+  --window-background: #181818;
+  --window-color: #d8d8d8;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.window {
+  font-family: var(--monospace);
+  line-height: 1.5;
+  max-width: 80vw;
+  color: var(--window-color);
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 2.5vh 4vw;
+  position: relative;
+  background: var(--window-background);
+  border-radius: 6px 6px 8px 8px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow: hidden;
+  border-top: 8px solid var(--red);
+  direction: ltr;
+  text-align: left;
+}
+
+pre {
+  font-family: var(--monospace);
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre.frame::-webkit-scrollbar {
+  display: block;
+  height: 5px;
+}
+
+pre.frame::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+
+pre.frame {
+  scrollbar-width: thin;
+}
+
+.message {
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.message-body {
+  color: var(--red);
+}
+
+.plugin {
+  color: var(--purple);
+}
+
+.file {
+  color: var(--cyan);
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.frame {
+  color: var(--yellow);
+}
+
+.stack {
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.tip {
+  font-size: 13px;
+  color: #999;
+  border-top: 1px dotted #999;
+  padding-top: 13px;
+  line-height: 1.8;
+}
+
+code {
+  font-size: 13px;
+  font-family: var(--monospace);
+  color: var(--yellow);
+}
+
+.file-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+kbd {
+  line-height: 1.5;
+  font-family: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: rgb(38, 40, 44);
+  color: rgb(166, 167, 171);
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.25rem;
+  border-width: 0.0625rem 0.0625rem 0.1875rem;
+  border-style: solid;
+  border-color: rgb(54, 57, 64);
+  border-image: initial;
+}
+</style></div></template></vite-error-overlay></body></html>

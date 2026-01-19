@@ -51,17 +51,3 @@ export default function BtnLangue() {
         </>
     );
 }
-
-/*
-const list = ["Pizza", "Burger", "Sushi"];
-
-function MyList() {
-    return (
-        <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
-        {list.map((item, index) => (
-            <li key={index}>{item}</li>
-        ))}
-        </ul>
-    );
-}
-*/

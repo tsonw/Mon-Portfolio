@@ -10,15 +10,11 @@ export default function Skills() {
         <>
             <div className="panel-skill" id="skills">
                 <div className="skills">
-                    <div className="box-text">
+                    <div className="box-text-skills">
                         <h2 className="titre-skill">Compétences</h2>
                     </div>
                     <div className="skills-box">
                         <CardSkill />
-                    </div>
-                    <div className="button-projet-skills">
-                        <Link to="/ProjetPersonnel" className="pjt-skills">Projets personnels</Link>
-                        <Link to="/ProjetInformatique" className="pjt-skills">Projets informatiques</Link>
                     </div>
                 </div>
             </div>

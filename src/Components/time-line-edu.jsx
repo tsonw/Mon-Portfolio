@@ -15,12 +15,12 @@ export default function TimeLineEdu() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentArrowStyle={{ 
-                        borderRight: '8px solid rgb(0, 0, 0)' 
+                        borderRight: '8px solid rgba(255, 255, 255, 0)' 
                     }}
                     contentStyle={{
                         backgroundColor: '#ffffff',
-                        boxShadow: '5px 5px 0px rgb(225, 255, 0)',
-                        borderRadius: '20px'
+                        boxShadow: '5px 5px 0px #3A3A3A',
+                        borderRadius: '5px'
                     }}
                     dateClassName="date-timeline"
                     date="2025 - 2026"
@@ -44,7 +44,7 @@ export default function TimeLineEdu() {
                         </div>
                     }
                     iconStyle={{ 
-                        background: '#DEF246',
+                        background: '#ffffff',
                         boxShadow: '0px 0px 10px #000000'
                     }}
                     shadowSize="large"
@@ -59,15 +59,15 @@ export default function TimeLineEdu() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentArrowStyle={{ 
-                        borderRight: '8px solid rgb(0, 0, 0)' 
+                        borderRight: '8px solid rgba(255, 255, 255, 0)' 
                     }}
                     contentStyle={{
                         backgroundColor: '#ffffff',
-                        boxShadow: '5px 5px 0px #DEF246',
-                        borderRadius: '20px'
+                        boxShadow: '5px 5px 0px #3A3A3A',
+                        borderRadius: '5px'
                     }}
                     dateClassName="date-timeline"
-                    date="2024 - 2025"
+                    date="2025 - 2026"
                     icon={
                         <div style={{ 
                         width: '100%', 
@@ -80,15 +80,15 @@ export default function TimeLineEdu() {
                             src={eduIcon} 
                             alt="education icon" 
                             style={{ 
-                            width: '50%', 
-                            height: '50%', 
-                            objectFit: 'cover' 
-                            }} 
+                                width: '50%', 
+                                height: '50%', 
+                                objectFit: 'cover' 
+                            }}
                         />
                         </div>
                     }
                     iconStyle={{ 
-                        background: '#DEF246',
+                        background: '#ffffff',
                         boxShadow: '0px 0px 10px #000000'
                     }}
                     shadowSize="large"
@@ -103,15 +103,15 @@ export default function TimeLineEdu() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentArrowStyle={{ 
-                        borderRight: '8px solid rgb(0, 0, 0)' 
+                        borderRight: '8px solid rgba(255, 255, 255, 0)' 
                     }}
                     contentStyle={{
                         backgroundColor: '#ffffff',
-                        boxShadow: '5px 5px 0px #DEF246',
-                        borderRadius: '20px'
+                        boxShadow: '5px 5px 0px #3A3A3A',
+                        borderRadius: '5px'
                     }}
                     dateClassName="date-timeline"
-                    date="2023 - 2024"
+                    date="2025 - 2026"
                     icon={
                         <div style={{ 
                         width: '100%', 
@@ -124,15 +124,15 @@ export default function TimeLineEdu() {
                             src={eduIcon} 
                             alt="education icon" 
                             style={{ 
-                            width: '50%', 
-                            height: '50%', 
-                            objectFit: 'cover' 
-                            }} 
+                                width: '50%', 
+                                height: '50%', 
+                                objectFit: 'cover' 
+                            }}
                         />
                         </div>
                     }
                     iconStyle={{ 
-                        background: '#DEF246',
+                        background: '#ffffff',
                         boxShadow: '0px 0px 10px #000000'
                     }}
                     shadowSize="large"
@@ -147,15 +147,15 @@ export default function TimeLineEdu() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentArrowStyle={{ 
-                        borderRight: '8px solid rgb(0, 0, 0)' 
+                        borderRight: '8px solid rgba(255, 255, 255, 0)' 
                     }}
                     contentStyle={{
                         backgroundColor: '#ffffff',
-                        boxShadow: '5px 5px 0px #DEF246',
-                        borderRadius: '20px'
+                        boxShadow: '5px 5px 0px #3A3A3A',
+                        borderRadius: '5px'
                     }}
                     dateClassName="date-timeline"
-                    date="2020 - 2023"
+                    date="2025 - 2026"
                     icon={
                         <div style={{ 
                         width: '100%', 
@@ -168,15 +168,15 @@ export default function TimeLineEdu() {
                             src={eduIcon} 
                             alt="education icon" 
                             style={{ 
-                            width: '50%', 
-                            height: '50%', 
-                            objectFit: 'cover' 
-                            }} 
+                                width: '50%', 
+                                height: '50%', 
+                                objectFit: 'cover' 
+                            }}
                         />
                         </div>
                     }
                     iconStyle={{ 
-                        background: '#DEF246',
+                        background: '#ffffff',
                         boxShadow: '0px 0px 10px #000000'
                     }}
                     shadowSize="large"
@@ -186,7 +186,7 @@ export default function TimeLineEdu() {
                 >
                     <h3 className="vertical-timeline-element-title">Lycée d’excéllence Hoang Van Thu</h3>
                     <h4 className="vertical-timeline-element-subtitle">Vietnam</h4>
-                    <p className="description-formation">Élève de la classe à option français</p>
+                    <p className="description-formation">Baccalauréat (équivalent) — Vietnam</p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
         </>

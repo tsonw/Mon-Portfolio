@@ -30,6 +30,7 @@ import iconGit from '../../assets/icon/color/git.png';
 import iconGitlab from '../../assets/icon/color/gitlab.png';
 import iconOffice from '../../assets/icon/color/office.png';
 import iconFireBase from '../../assets/icon/color/firebase.png'
+import iconAPI from '../../assets/icon/color/api.png'
 
 
 import imgProjet11 from '../../assets/projet/informatique/base-donnees/1.png';
@@ -54,6 +55,22 @@ import imgProjet52 from '../../assets/projet/informatique/data/2.png';
 import imgProjet55 from '../../assets/projet/informatique/data/5.png';
 import imgProjet56 from '../../assets/projet/informatique/data/6.png';
 import imgProjet57 from '../../assets/projet/informatique/data/7.png';
+
+import imgProjet61 from '../../assets/projet/informatique/phpJavaApi/1.jpg';
+import imgProjet62 from '../../assets/projet/informatique/phpJavaApi/2.png';
+import imgProjet63 from '../../assets/projet/informatique/phpJavaApi/3.png';
+import imgProjet64 from '../../assets/projet/informatique/phpJavaApi/4.png';
+import imgProjet65 from '../../assets/projet/informatique/phpJavaApi/5.png';
+import imgProjet66 from '../../assets/projet/informatique/phpJavaApi/6.png';
+import imgProjet67 from '../../assets/projet/informatique/phpJavaApi/7.png';
+import imgProjet68 from '../../assets/projet/informatique/phpJavaApi/8.png';
+import imgProjet69 from '../../assets/projet/informatique/phpJavaApi/9.png';
+import imgProjet610 from '../../assets/projet/informatique/phpJavaApi/10.png';
+import imgProjet611 from '../../assets/projet/informatique/phpJavaApi/11.png';
+import imgProjet612 from '../../assets/projet/informatique/phpJavaApi/12.png';
+import imgProjet613 from '../../assets/projet/informatique/phpJavaApi/13.png';
+import imgProjet614 from '../../assets/projet/informatique/phpJavaApi/14.png';
+import imgProjet615 from '../../assets/projet/informatique/phpJavaApi/15.png';
 
 import imgProjet112 from '../../assets/projet/personnel/ptsai/posters.jpg';
 import imgProjet122 from '../../assets/projet/personnel/ptsai/logo1.jpg';
@@ -162,6 +179,35 @@ const listProjetInfos = [
             { icon: imgProjet56, nameLangue: "img"},
             { icon: imgProjet57, nameLangue: "img"}
         ]
+    },
+    { 
+        id: 6,
+        date: "2025 - 2026",
+        name: "Plateforme FullStack d’aide à la création de groupes TP/TD (Université) — PHP/MySQL, Java, API REST",
+        descript: "- Plateforme d’assistance à la création de groupes TP/TD pour des promotions (souvent >100 étudiants), avec contraintes pédagogiques et organisationnelles.\n- Authentification + gestion des rôles et droits : responsables de formation, responsables de semestre/filière, enseignants, étudiants (consultation / édition / publication).\n- Administration : gestion promotions/étudiants, ajout/suppression, édition des informations.\n- Sondages : questions à choix unique (ex. cours en anglais) ou préférences ordonnées (ex. matières optionnelles).\n- Covoiturage : sélection de collègues (limite configurable, ex. 2 à 4 personnes).\n- Import des notes via fichier .csv : validation (numéro, nom, prénom), mapping des colonnes (ex. maths, anglais, moyenne).\n- Génération automatique des groupes : homogénéité (moyennes/écarts-types), quotas par critères (genre, bac, redoublants, apprentissage, etc.).\n- Contraintes de regroupement/séparation : étudiants à mettre ensemble ou à éviter (prioritaires).\n- Ajustements manuels + tableau de contrôle qualité pour vérifier le respect des critères après chaque modification.\n- Publication des groupes + export CSV (groupes TP/TD + données pédagogiques) ; export complet (incluant données personnelles) pour responsables.\n- Architecture : site web PHP (MVC) + MySQL, API REST (JSON) sécurisée, application Java (POO) cliente (bureau/mobile).\n- Travail en équipe de 3 + démarche centrée utilisateur (analyse besoin → conception → prototypage → implémentation) + sécurité/protection des données.",
+        photo: imgProjet61,
+        langue: [
+            { icon: iconPhp, nameLangue: "PHP (MVC)" },
+            { icon: iconMySQL, nameLangue: "MySQL" },
+            { icon: iconJava, nameLangue: "Java (POO)" },
+            { icon: iconAPI, nameLangue: "REST API" }
+        ],
+        image: [
+            { icon: imgProjet62, nameLangue: "img" },
+            { icon: imgProjet63, nameLangue: "img" },
+            { icon: imgProjet64, nameLangue: "img" },
+            { icon: imgProjet65, nameLangue: "img" },
+            { icon: imgProjet66, nameLangue: "img" },
+            { icon: imgProjet67, nameLangue: "img" },
+            { icon: imgProjet68, nameLangue: "img" },
+            { icon: imgProjet69, nameLangue: "img" },
+            { icon: imgProjet611, nameLangue: "img" },
+            { icon: imgProjet611, nameLangue: "img" },
+            { icon: imgProjet612, nameLangue: "img" },
+            { icon: imgProjet613, nameLangue: "img" },
+            { icon: imgProjet614, nameLangue: "img" },
+            { icon: imgProjet615, nameLangue: "img" }
+        ]
     }
 ];
 
@@ -246,6 +292,7 @@ const listProjetPersonnes = [
 export default function Projet() {
 
     const [dataProjet, setDataProjet] = useState(listProjetPersonnes);
+    const [projetChoisi, setProjetChoisi] = useState(true); // Defaut : Projet Personne
 
     return (
         <>
@@ -254,12 +301,18 @@ export default function Projet() {
                     <div className="box-text-projets">
                         <h2 className="titre-projet">Projets réalisés</h2>
                         <div className="panel_btn_choix">
-                            <button onClick={() => {
-                                setDataProjet(listProjetPersonnes);
-                            }}>PERSONNELS</button>
-                            <button onClick={() => {
-                                setDataProjet(listProjetInfos);
-                            }}>ACADÉMIQUES</button>
+                            <button 
+                                className={projetChoisi ? "btn_choisi_projet" : "btn_non_choisi_projet"} 
+                                onClick={() => {
+                                    setDataProjet(listProjetPersonnes);
+                                    setProjetChoisi(true);
+                                }}>PERSONNELS</button>
+                            <button 
+                                className={projetChoisi ? "btn_non_choisi_projet" : "btn_choisi_projet"} 
+                                onClick={() => {
+                                    setDataProjet(listProjetInfos);
+                                    setProjetChoisi(false);
+                                }}>ACADÉMIQUES</button>
                         </div>
                     </div>
                     <div className="projets-box">

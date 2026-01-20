@@ -103,8 +103,28 @@ export default function CardProjet({ dataProjet }) {
                                     <i className="fi fi-rr-caret-left"></i>
                                 </button>
                             </div>
-                            <h3 className="titre_details_projet">{item.name}</h3>
-                            <p className="descript_details_projet">{item.descript}</p>
+                            <div className="panel_text_details_projet">
+                                <h2 className="date_details_projet">{item.date }</h2>
+                                <h3 className="titre_details_projet">{item.name}</h3>
+                                <p className="descript_details_projet">
+                                    {item.descript.split("\n").map((line, i) => (
+                                            <span key={i}>{line}<br /></span>
+                                    ))}
+                                </p>
+                            </div>
+                            <div className="panel_langue_code_details">
+                                {item.langue.map((element, i) => (
+                                    <div className="langue_code_details" key={element.nameLangue ?? i}>
+                                        <img
+                                            className="langue_code_details_img"
+                                            draggable="false"
+                                            src={element.icon}
+                                            alt={element.nameLangue}
+                                        />
+                                        <span className="langue_code_details_text">{element.nameLangue}</span>
+                                    </div>
+                                ))}
+                            </div>
 
                             <button
                                 className="btn_close_details_projet"

@@ -32,7 +32,41 @@
     gap: 30px;
 }
 
-.panel_btn_choix > button {
+.panel_btn_choix > abutton {
+    background-color: transparent;
+    color: #1C1C1C;
+    padding: 10px 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn_choisi_projet {
+    background-color: transparent;
+    color: #1C1C1C;
+    padding: 10px 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn_choisi_projet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    border-bottom: #000000 solid 2px;
+}
+
+.btn_non_choisi_projet {
     background-color: transparent;
     color: #1C1C1C;
     padding: 10px 20px;

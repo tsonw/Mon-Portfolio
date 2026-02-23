@@ -9,13 +9,6 @@ export default function NavBar() {
     return (
         <>
             <nav className="navbar">
-                <a className="logo_link" href="/Mon-Portfolio/" onClick={(e) => {
-                    e.preventDefault();
-                    const el = document.getElementById('home');
-                    if (el) {
-                        el.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }}><img className="logo" draggable="false" src="/Mon-Portfolio/LogoTS.png" alt="Logo" /></a>
                 <div className="panel_fonction">
                     <ul className="navbar_fonction">
                         <li><a href="/Mon-Portfolio/" onClick={(e) => {
@@ -46,15 +39,6 @@ export default function NavBar() {
                             <li><Link to="/english">EN</Link></li>    
                             <li><Link to="/vietnam">VI</Link></li>    
                         </ul>
-                    </div>
-                    <div className="btn_contact">
-                        <a href="/Mon-Portfolio/" onClick={(e) => {
-                            e.preventDefault();
-                            const el = document.getElementById('contact');
-                            if (el) {
-                                el.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }}>Contactez-moi</a>
                     </div>
                 </div>
             </nav>

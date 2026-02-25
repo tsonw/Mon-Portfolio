@@ -17,7 +17,6 @@ export default function Francais() {
             <Formation />
             <Skills />
             <Projet />
-            <Contact />
         </>
     );
 }

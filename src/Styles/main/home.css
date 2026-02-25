@@ -25,6 +25,16 @@ body {
     overflow: hidden;
 }
 
+.home::before {
+    content: "";
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, #f5f5f500, #f5f5f5 100%);
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
 .home > .text {
     display: flex;
     flex-direction: column;
@@ -211,6 +221,7 @@ body {
     opacity: 0;
     transform: translateY(100px);
     animation: fadeUp 600ms ease-out forwards;
+    z-index: 11;
 }
 .deco_top_right {
     display: flex;
@@ -221,6 +232,7 @@ body {
     opacity: 0;
     transform: translateY(100px);
     animation: fadeUp 600ms ease-out forwards;
+    z-index: 11;
 }
 .deco_bottom_right {
     display: flex;
@@ -232,6 +244,7 @@ body {
     opacity: 0;
     transform: translateY(100px);
     animation: fadeUp 600ms ease-out forwards;
+    z-index: 11;
 }
 .deco_bottom_left {
     display: flex;
@@ -242,6 +255,7 @@ body {
     opacity: 0;
     transform: translateY(100px);
     animation: fadeUp 600ms ease-out forwards;
+    z-index: 11;
 }
 
 @keyframes fadeUp {

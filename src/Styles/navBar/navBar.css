@@ -7,11 +7,11 @@
     justify-items: center;
     align-items: center;
     padding: 0 50px;
-    background-color: #f5f5f5;
+    background-color: #f5f5f56d;
     position: fixed;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     animation: animation-nav 0.5s ease-in-out forwards;;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .navbar_fonction > li > a:hover {
-    text-shadow: 0 0 1px currentColor;
+    text-shadow: 0 0 0.5px currentColor;
 }
 
 .navbar_fonction > li > a::before{

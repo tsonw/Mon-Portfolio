@@ -8,7 +8,6 @@
 }
 
 .skills {
-    background-color: #ffffff;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -16,19 +15,20 @@
     justify-content: center;
 }
 
-.box-text-skills {
+.box_text_skills {
     width: 100%;
-    margin-bottom: 30px;
 }
 
-.titre-skill {
-    font-family: "Lexend", sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    color: #000000;
+.titre_skill {
+    color: #1C1C1C;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 50px;
+    z-index: 10;
 }
 
-.skills-box {
+.skills_box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;

@@ -10,6 +10,7 @@
 
 .projets {
     background-color: #f5f5f5;
+    max-width: 1920px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -30,18 +31,8 @@
     right: 0;
     height: 100%;
     display: flex;
+    align-items: center;
     gap: 30px;
-}
-
-.panel_btn_choix > abutton {
-    background-color: transparent;
-    color: #1C1C1C;
-    padding: 10px 20px;
-    font-family: "Lexend", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
 }
 
 .btn_choisi_projet {
@@ -50,7 +41,7 @@
     padding: 10px 20px;
     font-family: "Lexend", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     position: relative;
     border: none;
@@ -62,7 +53,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 80%;
+    height: 100%;
     width: 100%;
     border-bottom: #000000 solid 2px;
 }
@@ -73,22 +64,24 @@
     padding: 10px 20px;
     font-family: "Lexend", sans-serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     border: none;
 }
 
 .titre-projet {
-    font-family: "Lexend", sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    color: #000000;
+    color: #1C1C1C;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 50px;
+    z-index: 10;
 }
 
 .projets-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     height: fit-content;
     width: 100%;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/card-skill/card-projet.css";
+import { element } from "prop-types";
 
 export default function CardProjet({ dataProjet }) {
     const [selectedId, setSelectedId] = useState(null);
@@ -45,23 +46,12 @@ export default function CardProjet({ dataProjet }) {
             return (
             <React.Fragment key={id}>
                 <div
-                className="card"
-                onClick={() => setSelectedId((prev) => (prev === id ? null : id))}
-                role="button"
-                tabIndex={0}
+                    className="card"
+                    onClick={() => setSelectedId((prev) => (prev === id ? null : id))}
+                    role="button"
+                    tabIndex={0}
                 >
                 <div className="top-section">
-                    <div className="border"></div>
-                    <div className="icons">
-                        <div className="logo">
-                            <img
-                                className="logo_img"
-                                draggable="false"
-                                src="/Mon-Portfolio/LogoTS.png"
-                                alt="Logo"
-                            />
-                        </div>
-                    </div>
                     <img
                         className="photo_img"
                         draggable="false"
@@ -125,7 +115,13 @@ export default function CardProjet({ dataProjet }) {
                                     </div>
                                 ))}
                             </div>
-
+                            <div className="button_demo">
+                                {item.url ? (
+                                    <a href={item.url}>DÉMO</a>
+                                ) : (
+                                    <span></span>
+                                )}
+                            </div>
                             <button
                                 className="btn_close_details_projet"
                                 onClick={(e) => {

@@ -93,6 +93,7 @@
 
 
 .formation {
+    max-width: 1920px;
     width: 80%;
     padding-top: 50px;
     padding-bottom: 50px;

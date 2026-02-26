@@ -244,7 +244,8 @@ const listProjetPersonnes = [
             { icon: imgProjet222, nameLangue: "img"},
             { icon: imgProjet232, nameLangue: "img"},
             { icon: imgProjet242, nameLangue: "img"}
-        ]
+        ],
+        url: "https://tsonw.github.io/TicTacToe/"
     },
     { 
         id: 3,
@@ -283,7 +284,8 @@ const listProjetPersonnes = [
         ],
         image: [
             { icon: imgProjet412, nameLangue: "img" }
-        ]
+        ],
+        url: "https://tsonw.github.io/Weather-App/"
     }
 ];
 
@@ -299,7 +301,7 @@ export default function Projet() {
             <div className="panel-projet" id="projets">
                 <div className="projets">
                     <div className="box-text-projets">
-                        <h2 className="titre-projet">Projets réalisés</h2>
+                        <h2 className="titre-projet">Projets.</h2>
                         <div className="panel_btn_choix">
                             <button 
                                 className={projetChoisi ? "btn_choisi_projet" : "btn_non_choisi_projet"} 

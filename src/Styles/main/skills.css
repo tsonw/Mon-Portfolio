@@ -8,11 +8,13 @@
 }
 
 .skills {
+    max-width: 1920px;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .box_text_skills {

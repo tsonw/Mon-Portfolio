@@ -1,54 +1,283 @@
 import React from "react";
 import '../../Styles/main/Home.css';
-import mainPNG from '../../assets/main.png'
-import gif1 from '../../assets/retina.gif'
-import gif2 from '../../assets/encryption.gif'
-import gif3 from '../../assets/fingerprint-scan.gif'
-import gif4 from '../../assets/cybersecurity.gif'
+
+import iconGithub from '../../assets/icon/github.png';
+import iconIns from '../../assets/icon/instagram.png';
+import iconThreads from '../../assets/icon/threads.png';
+import iconFb from '../../assets/icon/facebook.png';
+import iconlinkedin from '../../assets/icon/linkedin.png';
 
 export default function HomeEN() {
 
+    const list_skill = [
+        "React", "JavaScript", "SQL", "Php", "Java", "Python"
+    ];
+
+    const listSocialMedia = [
+        {id: 1, icon: iconGithub, link: "https://github.com/tsonw"},
+        {id: 2, icon: iconIns, link: "https://www.instagram.com/tsonw_19/"},
+        {id: 3, icon: iconThreads, link: "https://www.threads.net/@tsonw_19?xmt=AQGzCM9Lsu-MWXqbsco2sAvhR4E-3hbWLbdd-sXhVRA15X4"},
+        {id: 4, icon: iconFb, link: "https://www.facebook.com/bibeeus"},
+        {id: 5, icon: iconlinkedin, link: "https://www.linkedin.com/in/thai-son-hoang-648423332/"},
+    ]
+
     return (
         <>
-            <div className="home" id="Home">
+            <div className="home" id="home">
+                <div className="matrix-container">
+                    <div className="matrix-pattern">
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                    </div>
+                    <div className="matrix-pattern">
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                    </div>
+                    <div className="matrix-pattern">
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                    </div>
+                    <div className="matrix-pattern">
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                    </div>
+                    <div className="matrix-pattern">
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                        <div className="matrix-column"></div>
+                    </div>
+                </div>
+
                 <div className="text">
-                    <p>Hello everyone !</p>
-                    <h1>Future Security Analyst</h1>
-                    <h1>IT Student</h1>
+                    <span className="home_statut">SEEKING INTERNSHIP OPPORTUNITIES</span>
+                    <span className="home_name">THAI SON</span>
+                    <span className="home_job">{'<Full-Stack Developer />'}</span>
+                    <div className="box_skill">
+                        {list_skill.map((item, i) => (
+                            <span key={i} className="home_name_skill">{item}</span>
+                        ))}
+                    </div>
+                    <div className="box_contact">
+                        {listSocialMedia.map((data, i) => (
+                            <a key={i} href={data.link} className="home_contact">
+                                <img src={data.icon} draggable="false" className="icon-social-content" alt="Phone" />
+                            </a>
+                        ))}
+                    </div>
+                    <a className="home_btn_download_CV" href="/Mon-Portfolio/CV_Stage.pdf" download>
+                        <span>View My CV</span>
+                    </a>
                 </div>
-                <div className="image">
-                    <div className="oval"></div>
-                    <img src={mainPNG} alt="Main" />
-                    <div className="gif-1" style={{ backgroundImage: `url(${gif1})`}}></div>
-                    <div className="gif-2" style={{ backgroundImage: `url(${gif2})`}}></div>
-                    <div className="gif-3" style={{ backgroundImage: `url(${gif3})`}}></div>
-                    <div className="gif-4" style={{ backgroundImage: `url(${gif4})`}}></div>
+
+                {/* Tieu de trang tri 4 goc */}
+                <div className="deco_top_left">
+                    <span>// portfolio.jsx</span>
+                    <span>// version: 3.0.0</span>
+                    <span>// status: production</span>
                 </div>
-                <div className="button-function">
-                    <button 
-                        className="En-savoir-plus"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            const el = document.getElementById('about');
-                            console.log('element about:', el);
-                            if (el) {
-                                el.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }}
-                    >
-                        Learn more
-                    </button>
-                    <button href="#" className="Contactez-moi" onClick={(e) => {
-                            e.preventDefault();
-                            const el = document.getElementById('contact');
-                            console.log('element about:', el);
-                            if (el) {
-                                el.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }}
-                    >
-                        Contact me
-                    </button>
+                <div className="deco_top_right">
+                    <span>012</span>
+                    <span>205</span>
+                    <span>248</span>
+                    <span>283</span>
+                    <span>910</span>
+                </div>
+                <div className="deco_bottom_right">
+                    <span>const status = "Computer Science Student (Cybersecurity focus)";</span>
+                    <span>const projects = 10;</span>
+                    <span>const passion = "cybersecurity";</span>
+                </div>
+                <div className="deco_bottom_left">
+                    <span>tsonw.github.io/Mon-Portfolio/en</span>
                 </div>
             </div>
         </>

@@ -1,8 +1,6 @@
 import React from "react";
 import '../../Styles/main/skills.css';
-import TimeLineEdu from "../time-line-edu";
-import CardSkillEN from "../card-skillEN";
-import { Link } from "react-router-dom";
+import CardSkillEN from "./componentsEN/card-skillEN";
 
 export default function SkillsEN() {
 
@@ -10,15 +8,11 @@ export default function SkillsEN() {
         <>
             <div className="panel-skill" id="skills">
                 <div className="skills">
-                    <div className="box-text">
-                        <h2 className="titre-skill">Skills</h2>
+                    <div className="box_text_skills">
+                        <h2 className="titre_skill">Skills.</h2>
                     </div>
-                    <div className="skills-box">
+                    <div className="skills_box">
                         <CardSkillEN />
-                    </div>
-                    <div className="button-projet-skills">
-                        <Link to="/ProjetPersonnelEN" className="pjt-skills">Personal projects</Link>
-                        <Link to="/ProjetInformatiqueEN" className="pjt-skills">Academic projects</Link>
                     </div>
                 </div>
             </div>

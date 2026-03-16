@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../Styles/navBar/navBar.css';
+import '../Styles/navBar/btn-langue.css';
 
 export default function NavBar() {
-
-
 
     return (
         <>
@@ -36,8 +35,7 @@ export default function NavBar() {
                     <div className="button_langue">
                         <ul>
                             <li><Link to="/">FR</Link></li>    
-                            <li><Link to="/english">EN</Link></li>    
-                            <li><Link to="/vietnam">VI</Link></li>    
+                            <li><Link to="/en">EN</Link></li>      
                         </ul>
                     </div>
                 </div>

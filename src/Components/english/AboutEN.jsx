@@ -1,53 +1,24 @@
 import React from "react";
-import '../../Styles/main/about.css';
-import CardProfileEN from "../card-profileEN";
-import TimeLineEduEN from "../time-line-eduEN";
+import '../../Styles/main/aboutEN.css';
+import CardProfile from "../card-profile";
+import TimeLineEdu from "../time-line-edu";
+import photo from "../../assets/about-brg.png"
+import logo from "../../assets/logo.png"
 
 export default function AboutEN() {
 
     return (
         <>
             <div className="about" id="about">
-                <div className="text-about">
-                    <div className="box-text">
-                        <h2 className="titre">About</h2>
-                        <p className="sous-titre">Second-year student in Computer Science at IUT d'Orsay</p>
-                        <p className="contenu">I am originally from Vietnam and passionate about programming, particularly cybersecurity. Curious and motivated, I constantly explore new technologies to strengthen my technical skills and gain a deeper understanding of computer systems.<br/><br/>My goal is not only to advance in this demanding field but also to inspire others to discover the joy of coding. I am seeking opportunities to apply my knowledge, collaborate on real projects, and grow in a stimulating environment.</p>
-                    </div>
-                    <div className="card-profile-box">
-                        <CardProfileEN />
-                    </div>
-                </div>
-                <div className="button-projet">
-                    <button className="pjt-per" onClick={(e) => {
-                            e.preventDefault();
-                            const el = document.getElementById('contact');
-                            if (el) {
-                                el.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }}
-                    >
-                        Contact me
-                    </button>
-                    <button className="pjt-rea" onClick={(e) => {
-                            e.preventDefault();
-                            const el = document.getElementById('skills');
-                            if (el) {
-                                el.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }}
-                    >
-                        Skills
-                    </button>
-                </div>
-                <div className="box-text">
-                    <h2 className="titre-formation">Education</h2>
-                </div>
-                <div className="formation">
-                    <div className="education">
-                        <div className="timeline">
-                            <TimeLineEduEN />
+                <h1 className="about_titre">About.</h1>
+                <div className="about_content">
+                    <div className="about_content_text">
+                        <div className="about_content_text_photo_box">
+                            <img src={photo} alt="photo" className="about_content_text_photo_img" draggable="false" />
+                            <div className="about_content_text_photo_box_shadow"></div>
                         </div>
+                        <p className="about_content_text_content"><strong>2nd-Year Computer Science Student (IUT d’Orsay),</strong> <br/>
+                        <strong>Seeking an internship in software development.</strong><br/>Originally from Vietnam, I am passionate about cybersecurity: I enjoy understanding how systems operate, identifying vulnerabilities, and learning how to secure them. My long-term goal is to transition into a backend role, building reliable, high-performance, and secure services. This internship is an opportunity for me to apply my skills, learn from a professional team, and strengthen my expertise through hands-on projects.</p>
                     </div>
                 </div>
             </div>

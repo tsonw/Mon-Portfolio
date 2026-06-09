@@ -238,7 +238,7 @@ export default function Home() {
                 </div>
 
                 <div className="text">
-                    <span className="home_statut">EN RECHERCHE DE STAGE</span>
+                    <span className="home_statut">EN RECHERCHE DE ALTERNANCE</span>
                     <span className="home_name">THAI SON</span>
                     <span className="home_job">{'<Développeur Full-Stack />'}</span>
                     <div className="box_skill">
@@ -253,7 +253,7 @@ export default function Home() {
                             </a>
                         ))}
                     </div>
-                    <a className="home_btn_download_CV" href="/Mon-Portfolio/CV_Stage.pdf" download>
+                    <a className="home_btn_download_CV" href="/Mon-Portfolio/CV_Alternance.pdf" download>
                         <span>Consulter mon CV</span>
                     </a>
                 </div>

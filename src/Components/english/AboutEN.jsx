@@ -9,7 +9,7 @@ export default function AboutEN() {
 
     return (
         <>
-            <div className="about" id="about">
+            <div className="about about--en" id="about">
                 <h1 className="about_titre">About.</h1>
                 <div className="about_content">
                     <div className="about_content_text">
@@ -17,7 +17,7 @@ export default function AboutEN() {
                             <img src={photo} alt="photo" className="about_content_text_photo_img" draggable="false" />
                             <div className="about_content_text_photo_box_shadow"></div>
                         </div>
-                        <p className="about_content_text_content"><strong>2nd-Year Computer Science Student (IUT d’Orsay),</strong> <br/>
+                        <p className="about_content_text_content"><strong>3rd-Year Computer Science Student (IUT d’Orsay),</strong> <br/>
                         <strong>Seeking an internship in software development.</strong><br/>Originally from Vietnam, I am passionate about cybersecurity: I enjoy understanding how systems operate, identifying vulnerabilities, and learning how to secure them. My long-term goal is to transition into a backend role, building reliable, high-performance, and secure services. This internship is an opportunity for me to apply my skills, learn from a professional team, and strengthen my expertise through hands-on projects.</p>
                     </div>
                 </div>

@@ -5,9 +5,9 @@ export default function Formation () {
 
     const list_formation = [
         {
-            year: "9/2026",
-            name: "École d'ingénieurs ENSIIE, France",
-            description: "Diplôme d'Ingénieur spécialité Informatique 1ère année | ING_I_1"
+            year: "2026 - 2027",
+            name: "IUT d'Orsay, Université Paris - Saclay, France",
+            description: "Étudiant en BUT 3 - Parcours B déploiement d'applications communicantes et sécurisées"
         },
         {
             year: "2025 - 2026",

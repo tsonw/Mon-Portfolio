@@ -238,7 +238,7 @@ export default function Home() {
                 </div>
 
                 <div className="text">
-                    <span className="home_statut">EN RECHERCHE DE ALTERNANCE</span>
+                    <span className="home_statut">EN RECHERCHE DE STAGE</span>
                     <span className="home_name">THAI SON</span>
                     <span className="home_job">{'<Développeur Full-Stack />'}</span>
                     <div className="box_skill">

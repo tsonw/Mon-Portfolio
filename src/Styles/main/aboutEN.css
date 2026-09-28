@@ -63,8 +63,8 @@
     background-color: #ffffff;
 }
 
-.about_content_text_photo_box_shadow::before {
-    content: "SEEKING AN APPRENTICESHIP";
+.about--en .about_content_text_photo_box_shadow::before {
+    content: "SEEKING AN INTERNSHIP";
     color: #ffffff;
     font-weight: 500;
     font-size: 20px;

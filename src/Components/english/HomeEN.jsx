@@ -238,7 +238,7 @@ export default function HomeEN() {
                 </div>
 
                 <div className="text">
-                    <span className="home_statut">SEEKING INTERNSHIP OPPORTUNITIES</span>
+                    <span className="home_statut">SEEKING AN INTERNSHIP</span>
                     <span className="home_name">THAI SON</span>
                     <span className="home_job">{'<Full-Stack Developer />'}</span>
                     <div className="box_skill">

@@ -63,7 +63,7 @@
     background-color: #ffffff;
 }
 
-.about_content_text_photo_box_shadow::before {
+.about--fr .about_content_text_photo_box_shadow::before {
     content: "EN RECHERCHE DE STAGE";
     color: #ffffff;
     font-weight: 500;
